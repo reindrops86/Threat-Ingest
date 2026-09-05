@@ -1,0 +1,5 @@
+variant,description,average_score,average_words,average_latency
+D_risk_focused,Risk and validation focused,8.0,63.0,1.982
+C_metric_focused,Metric and action focused,7.0,79.7,2.177
+B_business_audience,Business audience and decision focus,6.67,58.0,1.811
+A_minimal,Minimal summary request,6.0,29.0,1.522

@@ -1,0 +1,220 @@
+{
+  "cases": [
+    {
+      "case_id": "cti-20260817232744-9480",
+      "created_at": "2026-08-17T23:27:44.455234+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: secure-payroll.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- DOMAIN: payroll-login-secure.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering | MITRE=T1110, T1555, T1566",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:secure-payroll.co",
+        "domain:payroll-login-secure.co",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+        "email:helpdesk@secure-payroll.co"
+      ],
+      "source_text_snippet": "Threat Notice: phishing email from helpdesk@secure-payroll.co targeting staff. Link: https://payroll-login-secure.co/portal. Suspicious IP: 185.220.101.42. Hash: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+    },
+    {
+      "case_id": "cti-20260817233304-3832",
+      "title": "Critical CTI case",
+      "priority": "P1",
+      "status": "new",
+      "created_at": "2026-08-17T23:33:04.453101+00:00",
+      "updated_at": "2026-08-17T23:33:04.453101+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: secure-payroll.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- DOMAIN: payroll-login-secure.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering | MITRE=T1110, T1555, T1566\n\nGenerated alerts:\n- Critical CTI incident [Critical] | campaign | High-confidence phishing and malware indicators indicate active compromise or coordinated lure activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious file sample in the local dataset",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:secure-payroll.co",
+        "domain:payroll-login-secure.co",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+        "email:helpdesk@secure-payroll.co"
+      ],
+      "source_text_snippet": "Threat Notice: phishing email from helpdesk@secure-payroll.co targeting staff. Link: https://payroll-login-secure.co/portal. Suspicious IP: 185.220.101.42. Hash: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+      "related_cases": []
+    },
+    {
+      "case_id": "cti-20260817233357-7872",
+      "title": "Critical CTI case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-17T23:33:57.804042+00:00",
+      "updated_at": "2026-08-17T23:33:57.818149+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: secure-payroll.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- DOMAIN: payroll-login-secure.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering | MITRE=T1110, T1555, T1566\n\nGenerated alerts:\n- Critical CTI incident [Critical] | campaign | High-confidence phishing and malware indicators indicate active compromise or coordinated lure activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious file sample in the local dataset",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:secure-payroll.co",
+        "domain:payroll-login-secure.co",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+        "email:helpdesk@secure-payroll.co"
+      ],
+      "source_text_snippet": "Threat Notice: phishing email from helpdesk@secure-payroll.co targeting staff. Link: https://payroll-login-secure.co/portal. Suspicious IP: 185.220.101.42. Hash: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+      "related_cases": [],
+      "assignee": "Analyst A",
+      "notes": [
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-17T23:33:57.804042+00:00",
+          "text": "Initial triage: campaign appears coordinated and tied to credential phishing."
+        }
+      ]
+    },
+    {
+      "case_id": "cti-20260817233842-271",
+      "title": "Medium CTI case",
+      "priority": "P3",
+      "status": "assigned",
+      "created_at": "2026-08-17T23:38:42.559602+00:00",
+      "updated_at": "2026-08-17T23:38:42.576032+00:00",
+      "risk_score": 41,
+      "severity": "Medium",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Medium (41/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: payroll-login-secure.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n\nGenerated alerts:\n- Malicious IP observed [Medium] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co"
+      ],
+      "source_text_snippet": "Payroll login secure domain payroll-login-secure.co and IP 185.220.101.42",
+      "related_cases": [
+        "cti-20260817232744-9480",
+        "cti-20260817233304-3832",
+        "cti-20260817233357-7872"
+      ],
+      "assignee": "Analyst A",
+      "notes": [
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-17T23:38:42.559602+00:00",
+          "text": "A8 related-case validation"
+        }
+      ]
+    },
+    {
+      "case_id": "cti-20260817233933-5818",
+      "title": "Medium CTI case",
+      "priority": "P3",
+      "status": "in_progress",
+      "created_at": "2026-08-17T23:39:33.854658+00:00",
+      "updated_at": "2026-08-17T23:39:33.883223+00:00",
+      "risk_score": 41,
+      "severity": "Medium",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Medium (41/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: payroll-login-secure.co | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1059, T1105, T1110, T1555\n\nGenerated alerts:\n- Malicious IP observed [Medium] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co"
+      ],
+      "source_text_snippet": "Payroll login secure domain payroll-login-secure.co and IP 185.220.101.42",
+      "related_cases": [
+        "cti-20260817232744-9480",
+        "cti-20260817233304-3832",
+        "cti-20260817233357-7872",
+        "cti-20260817233842-271"
+      ],
+      "assignee": "Analyst A",
+      "notes": [
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-17T23:39:33.854658+00:00",
+          "text": "A9 state transition test"
+        },
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-17T23:39:33.883223+00:00",
+          "text": "Analyst is actively investigating the domain and IP."
+        }
+      ]
+    },
+    {
+      "case_id": "cti-20260818163557-7042",
+      "title": "Critical CTI case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-18T16:35:57.411196+00:00",
+      "updated_at": "2026-08-18T16:35:57.438772+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: powershell.exe | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1204\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n\nGenerated alerts:\n- Critical CTI incident [Critical] | campaign | High-confidence phishing and malware indicators indicate active compromise or coordinated lure activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious file sample in the local dataset",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:powershell.exe",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "\nThreat Notice: A malicious phishing campaign is targeting healthcare staff.\nThe email lure impersonates a payroll portal and includes a link to\nhttps://payroll-login-secure[.]co/portal. The campaign also uses the sender\naddress helpdesk@se",
+      "related_cases": [
+        "cti-20260817232744-9480",
+        "cti-20260817233304-3832",
+        "cti-20260817233357-7872",
+        "cti-20260817233842-271",
+        "cti-20260817233933-5818"
+      ],
+      "assignee": "Analyst A",
+      "notes": [
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-18T16:35:57.411196+00:00",
+          "text": "Initial triage"
+        }
+      ]
+    },
+    {
+      "case_id": "cti-20260828162817-2750",
+      "title": "Critical CTI case",
+      "priority": "P1",
+      "status": "new",
+      "created_at": "2026-08-28T16:28:17.962314+00:00",
+      "updated_at": "2026-08-28T16:28:17.962314+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- DOMAIN: powershell.exe | confidence=0.82 | tags=host, suspicious-domain | MITRE=T1204\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n\nGenerated alerts:\n- Critical CTI incident [Critical] | campaign | High-confidence phishing and malware indicators indicate active compromise or coordinated lure activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious file sample in the local dataset",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:powershell.exe",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "\nThreat Notice: A malicious phishing campaign is targeting healthcare staff.\nThe email lure impersonates a payroll portal and includes a link to\nhttps://payroll-login-secure[.]co/portal. The campaign also uses the sender\naddress helpdesk@se",
+      "related_cases": [
+        "cti-20260818163557-7042",
+        "cti-20260817232744-9480",
+        "cti-20260817233304-3832",
+        "cti-20260817233357-7872",
+        "cti-20260817233842-271"
+      ],
+      "assignee": "unassigned",
+      "notes": []
+    },
+    {
+      "case_id": "cti-20260829192104-197",
+      "title": "Critical CTI case",
+      "priority": "P1",
+      "status": "new",
+      "created_at": "2026-08-29T19:21:04.420479+00:00",
+      "updated_at": "2026-08-29T19:21:04.420479+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Cyber Threat Intelligence Assessment\n==================================\nRisk level: Critical (100/100)\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure | MITRE=T1041, T1071\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=phishing, delivery | MITRE=T1110, T1555, T1566\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution | MITRE=T1059, T1204\n\nGenerated alerts:\n- Critical CTI incident [Critical] | campaign | High-confidence phishing and malware indicators indicate active compromise or coordinated lure activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure matching phishing and C2 activity\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious file sample in the local dataset",
+      "indicators": [
+        "ip:185.220.101.42",
+        "url:https://payroll-login-secure.co/portal",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "Actor used https://payroll-login-secure[.]co/portal from 185.220.101.42 with hash 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5",
+      "related_cases": [
+        "cti-20260817232744-9480",
+        "cti-20260817233304-3832",
+        "cti-20260817233357-7872",
+        "cti-20260818163557-7042",
+        "cti-20260828162817-2750"
+      ],
+      "assignee": "unassigned",
+      "notes": []
+    }
+  ]
+}

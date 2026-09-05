@@ -1,0 +1,20 @@
+title: Suspicious PowerShell Loader
+id: 5f9d9c9f-1a4f-4a8e-9e35-02f8f2a12d10
+status: experimental
+description: Detects encoded or suspicious PowerShell execution patterns often used by loaders.
+author: security-lab
+date: 2026-08-22
+logsource:
+  product: windows
+  service: powershell
+detection:
+  selection:
+    CommandLine|contains:
+      - '-enc'
+      - 'frombase64string'
+      - 'iex'
+      - 'downloadstring'
+  condition: selection
+falsepositives:
+  - Administrative automation
+level: medium

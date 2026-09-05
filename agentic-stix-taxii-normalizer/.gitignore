@@ -1,0 +1,3 @@
+data/normalized_*_bundle.json
+__pycache__/
+*.py[cod]

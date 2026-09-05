@@ -1,0 +1,204 @@
+{
+  "updated_at": "2026-08-30T21:27:25+00:00",
+  "actors": [
+    {
+      "actor_id": "UNC-0001",
+      "name": "BAPAK-LIKE",
+      "status": "tracked",
+      "first_seen": "2026-08-20T02:11:04Z",
+      "last_seen": "2026-10-02T03:21:03Z",
+      "signatures": [
+        "bapak-foothold"
+      ],
+      "fingerprints": [
+        {
+          "parameter": "publicKeyMaterial",
+          "value": "SGA1-EXAMPLE-PUBKEY-MATERIAL-AAA",
+          "api": "ImportKeyPair"
+        },
+        {
+          "parameter": "clusterName",
+          "value": "bapak1",
+          "api": "CreateCluster"
+        },
+        {
+          "parameter": "keyName",
+          "value": "appek",
+          "api": "ImportKeyPair"
+        },
+        {
+          "parameter": "keyName",
+          "value": "dfgfg",
+          "api": "ImportKeyPair"
+        },
+        {
+          "parameter": "keyName",
+          "value": "appes",
+          "api": "ImportKeyPair"
+        }
+      ],
+      "infrastructure": {
+        "source_ips": [
+          "203.0.113.41",
+          "198.51.100.88",
+          "192.0.2.55"
+        ],
+        "asns": [
+          "AS-EXAMPLE-ID",
+          "AS-EXAMPLE-VPN",
+          "AS-EXAMPLE-BR"
+        ],
+        "countries": [
+          "ID",
+          "SG",
+          "BR"
+        ]
+      },
+      "victims": [
+        "arn:aws:iam::111122223333:user/ci-deploy",
+        "arn:aws:iam::444455556666:user/analytics-batch",
+        "arn:aws:iam::222233334444:user/media-worker"
+      ],
+      "compromised_credentials": [
+        "AKIAEXAMPLELEAK01",
+        "AKIAEXAMPLELEAK02",
+        "AKIAEXAMPLELEAK07"
+      ],
+      "timeline": [
+        {
+          "observed": "2026-08-20T02:13:15Z",
+          "source": "wave-1",
+          "event": "cluster created",
+          "source_ip": "203.0.113.41",
+          "asn": "AS-EXAMPLE-ID",
+          "country": "ID"
+        },
+        {
+          "observed": "2026-08-21T19:47:05Z",
+          "source": "wave-1",
+          "event": "infrastructure rotation",
+          "source_ip": "198.51.100.88",
+          "asn": "AS-EXAMPLE-VPN",
+          "country": "SG",
+          "basis": "shared fingerprint: publicKeyMaterial=SGA1-EXAMPLE-PUBKEY-MATERIAL-AAA, clusterName=bapak1; shared behavior: bapak-foothold"
+        },
+        {
+          "observed": "2026-10-02T03:21:03Z",
+          "source": "wave-2",
+          "event": "infrastructure rotation",
+          "source_ip": "192.0.2.55",
+          "asn": "AS-EXAMPLE-BR",
+          "country": "BR",
+          "basis": "shared fingerprint: publicKeyMaterial=SGA1-EXAMPLE-PUBKEY-MATERIAL-AAA, clusterName=bapak1; shared behavior: bapak-foothold"
+        }
+      ],
+      "notes": [
+        {
+          "analyst": "analyst",
+          "timestamp": "2026-08-30T21:27:25+00:00",
+          "text": "Promoted to tracked actor as BAPAK-LIKE."
+        }
+      ],
+      "evidence_confidence": 85
+    },
+    {
+      "actor_id": "UNC-0002",
+      "name": null,
+      "status": "candidate",
+      "first_seen": "2026-08-22T08:03:11Z",
+      "last_seen": "2026-10-04T11:41:28Z",
+      "signatures": [
+        "androxgh0st-ses"
+      ],
+      "fingerprints": [
+        {
+          "parameter": "userName",
+          "value": "ses_xcatze",
+          "api": "CreateUser"
+        }
+      ],
+      "infrastructure": {
+        "source_ips": [
+          "203.0.113.150",
+          "198.51.100.201"
+        ],
+        "asns": [
+          "AS-EXAMPLE-HOST"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "victims": [
+        "arn:aws:iam::777788889999:user/web-app",
+        "arn:aws:iam::555566667777:user/mail-service"
+      ],
+      "compromised_credentials": [
+        "AKIAEXAMPLELEAK03",
+        "AKIAEXAMPLELEAK08"
+      ],
+      "timeline": [
+        {
+          "observed": "2026-08-22T08:03:40Z",
+          "source": "wave-1",
+          "event": "cluster created",
+          "source_ip": "203.0.113.150",
+          "asn": "AS-EXAMPLE-HOST",
+          "country": "US"
+        },
+        {
+          "observed": "2026-10-04T11:41:28Z",
+          "source": "wave-2",
+          "event": "activity linked",
+          "source_ip": "198.51.100.201",
+          "asn": "AS-EXAMPLE-HOST",
+          "country": "US",
+          "basis": "shared fingerprint: userName=ses_xcatze; shared behavior: androxgh0st-ses; shared ASN: AS-EXAMPLE-HOST"
+        }
+      ],
+      "notes": [],
+      "evidence_confidence": 70
+    },
+    {
+      "actor_id": "UNC-0003",
+      "name": null,
+      "status": "candidate",
+      "first_seen": "2026-08-23T14:22:09Z",
+      "last_seen": "2026-08-23T14:23:44Z",
+      "signatures": [
+        "generic-cred-recon",
+        "llmjacking"
+      ],
+      "fingerprints": [],
+      "infrastructure": {
+        "source_ips": [
+          "192.0.2.201"
+        ],
+        "asns": [
+          "AS-EXAMPLE-TOR"
+        ],
+        "countries": [
+          "NL"
+        ]
+      },
+      "victims": [
+        "arn:aws:iam::111122223333:user/data-sync"
+      ],
+      "compromised_credentials": [
+        "AKIAEXAMPLELEAK04"
+      ],
+      "timeline": [
+        {
+          "observed": "2026-08-23T14:23:44Z",
+          "source": "wave-1",
+          "event": "cluster created",
+          "source_ip": "192.0.2.201",
+          "asn": "AS-EXAMPLE-TOR",
+          "country": "NL"
+        }
+      ],
+      "notes": [],
+      "evidence_confidence": 45
+    }
+  ]
+}

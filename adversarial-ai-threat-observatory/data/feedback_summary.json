@@ -1,0 +1,56 @@
+{
+  "reviewed": 14,
+  "agreement_rate": 0.714,
+  "per_rule": {
+    "BEH-001": {
+      "confirmed": 3,
+      "false_positive": 0,
+      "inconclusive": 0,
+      "analyst_precision": 1.0
+    },
+    "BEH-002": {
+      "confirmed": 2,
+      "false_positive": 0,
+      "inconclusive": 1,
+      "analyst_precision": 1.0
+    },
+    "BEH-003": {
+      "confirmed": 1,
+      "false_positive": 0,
+      "inconclusive": 0,
+      "analyst_precision": 1.0
+    },
+    "BEH-004": {
+      "confirmed": 2,
+      "false_positive": 0,
+      "inconclusive": 0,
+      "analyst_precision": 1.0
+    },
+    "BEH-005": {
+      "confirmed": 1,
+      "false_positive": 2,
+      "inconclusive": 0,
+      "analyst_precision": 0.333
+    },
+    "BEH-006": {
+      "confirmed": 1,
+      "false_positive": 0,
+      "inconclusive": 1,
+      "analyst_precision": 1.0
+    }
+  },
+  "proposed_adjustments": [
+    {
+      "rule_id": "BEH-001",
+      "change": "promote_to_auto_case",
+      "detail": "Analyst precision 1.00 over 3 reviews. Eligible for automatic case creation, still human-approved for enforcement.",
+      "requires_review": true
+    },
+    {
+      "rule_id": "BEH-005",
+      "change": "raise_confidence_floor",
+      "detail": "Analyst precision 0.33. Require a corroborating rule before this detection can flag an account on its own.",
+      "requires_review": true
+    }
+  ]
+}

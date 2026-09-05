@@ -1,0 +1,29 @@
+{
+  "note": "Example analyst review queue. Signal ids come from data/signals.json for the default seed.",
+  "dispositions": [
+    {
+      "signal_id": "sig-0001",
+      "verdict": "confirmed",
+      "analyst": "a.mensah",
+      "note": "Gradient is unambiguous: benign warm-up to credential collection inside one session."
+    },
+    {
+      "signal_id": "sig-0004",
+      "verdict": "confirmed",
+      "analyst": "a.mensah",
+      "note": "Refusal followed by a same-topic retry with the harm wording removed."
+    },
+    {
+      "signal_id": "sig-0010",
+      "verdict": "false_positive",
+      "analyst": "r.okonkwo",
+      "note": "Tool call touched an artifact that was benign in this context; rule needs corroboration."
+    },
+    {
+      "signal_id": "sig-0023",
+      "verdict": "inconclusive",
+      "analyst": "r.okonkwo",
+      "note": "Timing fits, but a shared browser image could explain the fingerprint match."
+    }
+  ]
+}

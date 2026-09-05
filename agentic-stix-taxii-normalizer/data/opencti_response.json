@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "node": {
+        "indicator_type": "url",
+        "observable_value": "hxxp://download[.]example.test/dropper",
+        "confidence": 0.65,
+        "created": "2026-08-20T08:15:00Z",
+        "tags": ["initial-access", "malware"]
+      }
+    }
+  ]
+}

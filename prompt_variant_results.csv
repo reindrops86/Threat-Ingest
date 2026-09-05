@@ -1,0 +1,52 @@
+case_id,variant,description,prompt,response,latency_seconds,word_count,concise_score,task_aligned_score,metric_aware_score,actionable_score,total_score
+support_agent_metrics,A_minimal,Minimal summary request,"Summarize this in one sentence:
+
+Our AI support agent resolved 8,000 of 20,000 monthly Tier-1 support queries. The AI agent costs $12,000 per month. Human agents cost $4.50 per resolved query. Leadership wants to know whether the agent is creating enough business value.","Leadership needs to determine if the AI support agent, which resolves 8,000 of 20,000 monthly Tier-1 queries at a fixed cost of $12,000 versus $4.50 per human-resolved query, is delivering sufficient cost savings and business value relative to human agents.",1.924,40,2,2,2,1,7
+support_agent_metrics,B_business_audience,Business audience and decision focus,"For a non-technical business audience, summarize the main decision implication in 2 concise bullets.
+
+Our AI support agent resolved 8,000 of 20,000 monthly Tier-1 support queries. The AI agent costs $12,000 per month. Human agents cost $4.50 per resolved query. Leadership wants to know whether the agent is creating enough business value.","- The AI agent currently saves about **$24,000 per month** in avoided human support costs (8,000 × $4.50), yielding roughly **$12,000 net monthly benefit** after its $12,000 cost.  
+- Financially, the agent is creating positive value, but it’s only covering **40% of Tier-1 volume**, so leadership should weigh expansion (to increase savings) against quality/CSAT and any constraints on scaling its usage.",1.951,61,2,2,2,1,7
+support_agent_metrics,C_metric_focused,Metric and action focused,"Extract the most important metric, explain why it matters, and recommend one next action. Use 3 short bullets.
+
+Our AI support agent resolved 8,000 of 20,000 monthly Tier-1 support queries. The AI agent costs $12,000 per month. Human agents cost $4.50 per resolved query. Leadership wants to know whether the agent is creating enough business value.","- **Key metric:** AI cost per resolved query = **$1.50** vs human = **$4.50** (AI saves **$3** per Tier-1 resolution).  
+- **Why it matters:** At current volume (8,000 queries), AI generates ~**$24,000** in avoided human cost for **$12,000** spend → net **$12,000/month** value and clear unit-economics advantage.  
+- **Recommended action:** Increase AI coverage of Tier-1 queries (e.g., target 15,000/month) while monitoring CSAT and resolution accuracy to maximize net savings without harming customer experience.",2.614,73,2,2,2,1,7
+support_agent_metrics,D_risk_focused,Risk and validation focused,"Identify the likely business risk, the assumption to validate, and the next test. Keep the answer under 80 words.
+
+Our AI support agent resolved 8,000 of 20,000 monthly Tier-1 support queries. The AI agent costs $12,000 per month. Human agents cost $4.50 per resolved query. Leadership wants to know whether the agent is creating enough business value.","**Business risk:** AI may be more expensive per resolved query than humans, destroying value at scale.  
+**Key assumption to validate:** AI resolution quality (accuracy, CSAT, defections) is comparable to human agents.  
+**Next test:** Run an A/B test: route a matched set of Tier-1 queries to AI vs humans, measure cost per resolved query, resolution rate, and satisfaction, then compare ROI and decide on scale-up or adjustment.",1.976,66,2,2,2,2,8
+token_cost_spike,A_minimal,Minimal summary request,"Summarize this in one sentence:
+
+A deployed AI assistant has started generating long responses, loading large policy documents for simple questions, and retrying tool calls several times. Monthly cloud costs increased sharply.","The AI assistant’s inefficiency—overly long answers, unnecessary loading of large documents, and repeated tool retries—has sharply driven up monthly cloud costs.",1.256,21,2,2,2,1,7
+token_cost_spike,B_business_audience,Business audience and decision focus,"For a non-technical business audience, summarize the main decision implication in 2 concise bullets.
+
+A deployed AI assistant has started generating long responses, loading large policy documents for simple questions, and retrying tool calls several times. Monthly cloud costs increased sharply.","- The assistant is “over-working” on simple tasks (overly long answers, unnecessary document loading, repeated tool calls), driving up compute and cloud usage without adding business value.  
+- Leadership must decide whether to constrain and re-tune the assistant’s behavior (e.g., limit tools, response length, and retries) to control costs while preserving acceptable user experience.",1.79,54,2,2,2,1,7
+token_cost_spike,C_metric_focused,Metric and action focused,"Extract the most important metric, explain why it matters, and recommend one next action. Use 3 short bullets.
+
+A deployed AI assistant has started generating long responses, loading large policy documents for simple questions, and retrying tool calls several times. Monthly cloud costs increased sharply.","- **Key metric:** *Cost per successful user query* (total cloud spend ÷ number of resolved queries)  
+- **Why it matters:** It directly captures the economic efficiency of the assistant; rising costs per query signal overuse of compute (long responses, unnecessary document loads, repeated tool calls) without proportional value.  
+- **Next action:** Implement guardrails and budget-aware configs (response length limits, stricter tool-calling policies, and max retries) and then A/B test against current behavior to reduce cost per query while monitoring user satisfaction.",1.803,81,1,2,2,2,7
+token_cost_spike,D_risk_focused,Risk and validation focused,"Identify the likely business risk, the assumption to validate, and the next test. Keep the answer under 80 words.
+
+A deployed AI assistant has started generating long responses, loading large policy documents for simple questions, and retrying tool calls several times. Monthly cloud costs increased sharply.","**Risk:** Unsustainable cloud spend eroding margins and viability of the assistant.  
+**Assumption to validate:** Longer responses, large document loads, and multiple tool retries materially improve user outcomes (satisfaction, task completion, retention).  
+**Next test:** Run an A/B test comparing a cost-optimized configuration (shorter answers, tighter retrieval filters, limited retries) against current behavior, measuring user satisfaction, task success, and per-session cloud cost.",1.993,60,2,2,2,2,8
+clinic_ai_mvp,A_minimal,Minimal summary request,"Summarize this in one sentence:
+
+A small medical clinic wants an AI assistant to reduce missed appointments. The assistant would send reminders, answer basic scheduling questions, and escalate complex cases to front-desk staff.","A small medical clinic wants an AI assistant to reduce missed appointments by sending reminders, handling basic scheduling questions, and escalating complex cases to front-desk staff.",1.387,26,2,1,0,1,4
+clinic_ai_mvp,B_business_audience,Business audience and decision focus,"For a non-technical business audience, summarize the main decision implication in 2 concise bullets.
+
+A small medical clinic wants an AI assistant to reduce missed appointments. The assistant would send reminders, answer basic scheduling questions, and escalate complex cases to front-desk staff.","- Decide **how much autonomy to give the AI** in managing appointments (e.g., only reminders vs. rescheduling/cancellations), balancing convenience and efficiency with patient safety and staff oversight.  
+- Decide **how to integrate the assistant into existing workflows and systems** (EHR, scheduling software, front desk processes) so it reliably reduces no-shows without creating new bottlenecks, errors, or patient trust issues.",1.691,59,2,1,2,1,6
+clinic_ai_mvp,C_metric_focused,Metric and action focused,"Extract the most important metric, explain why it matters, and recommend one next action. Use 3 short bullets.
+
+A small medical clinic wants an AI assistant to reduce missed appointments. The assistant would send reminders, answer basic scheduling questions, and escalate complex cases to front-desk staff.","- **Key metric: No-show rate (% of scheduled appointments missed without cancellation).** This directly reflects whether reminders and assistance are effectively getting patients to show up.  
+- **Why it matters:** Reducing no-shows drives revenue, improves staff productivity, and ensures better continuity of care; it’s the clearest measure of success for an appointment-focused assistant.  
+- **Next action:** Run a 4–6 week pilot where half of patients receive AI-powered reminders and support, then compare no-show rates between AI and non-AI groups to quantify impact before wider rollout.",2.115,85,1,2,2,2,7
+clinic_ai_mvp,D_risk_focused,Risk and validation focused,"Identify the likely business risk, the assumption to validate, and the next test. Keep the answer under 80 words.
+
+A small medical clinic wants an AI assistant to reduce missed appointments. The assistant would send reminders, answer basic scheduling questions, and escalate complex cases to front-desk staff.","**Business risk:** Patients don’t engage with or trust the assistant, so missed appointments don’t decrease.  
+**Assumption to validate:** Patients will respond to AI-based reminders and use it for scheduling questions without confusion or frustration.  
+**Next test:** Run a small pilot: enable the assistant for a subset of patients, track reminder engagement, scheduling interactions, escalation rate, and change in no-show percentage over 4–6 weeks.",1.978,63,2,2,2,2,8

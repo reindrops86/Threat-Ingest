@@ -1,0 +1,25 @@
+[project]
+name = "gtm-research-agents"
+version = "0.1.0"
+description = "CrewAI-based multi-agent GTM research and strategy workflow"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "crewai>=1.15.4",
+  "google-api-python-client>=2.0.0",
+  "google-auth>=2.0.0",
+  "mcp>=1.0.0",
+  "python-dotenv>=1.0.1",
+  "requests>=2.31.0",
+  "streamlit>=1.30.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gtm_project"]

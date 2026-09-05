@@ -1,0 +1,30 @@
+{
+  "type": "bundle",
+  "id": "bundle--9c516e32-a306-4e30-8dd8-c2b144837b57",
+  "objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c1e250fd-f222-4a6b-82e5-a9a73d3c14dc",
+      "created": "2026-08-20T09:00:00Z",
+      "modified": "2026-08-20T09:00:00Z",
+      "pattern": "[domain-name:value = 'control.example.test']",
+      "pattern_type": "stix",
+      "valid_from": "2026-08-20T09:00:00Z",
+      "labels": ["command-and-control"],
+      "confidence": 75,
+      "external_references": [{"source_name": "Vendor Intelligence"}]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7c4595cd-a267-4cae-bcbe-c85d758f1f88",
+      "created": "2026-08-21T09:00:00Z",
+      "modified": "2026-08-21T09:00:00Z",
+      "pattern": "[ipv4-addr:value = '198.51.100.42']",
+      "pattern_type": "stix",
+      "valid_from": "2026-08-21T09:00:00Z",
+      "confidence": 50
+    }
+  ]
+}

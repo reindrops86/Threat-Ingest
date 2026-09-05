@@ -1,0 +1,31 @@
+{
+  "total_detections": 3,
+  "by_rule": {
+    "Suspicious PowerShell Loader": 1,
+    "Potential Credential Dumping": 1,
+    "Persistence via Scheduled Task": 1
+  },
+  "by_ttp": {
+    "Execution": 1,
+    "Credential Access": 1,
+    "Persistence": 1
+  },
+  "highest_confidence": {
+    "rule": "Suspicious PowerShell Loader",
+    "ttp": "Execution",
+    "host": "WIN-01",
+    "user": "alice",
+    "record": {
+      "ts": "2026-08-22 09:14:12",
+      "host": "WIN-01",
+      "event": "Security",
+      "command": "powershell.exe -enc SQBFAFgA...",
+      "user": "alice"
+    },
+    "enrichment": {
+      "risk": "high",
+      "confidence": 0.84,
+      "reason": "High-signal command/object pattern"
+    }
+  }
+}

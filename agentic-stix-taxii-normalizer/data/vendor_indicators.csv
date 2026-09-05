@@ -1,0 +1,4 @@
+indicator_type,ioc,confidence,timestamp,tags
+url,hxxps://login[.]example.test/reset,0.87,2026/08/20 12:00:00,phishing;credential-access
+ipv4,198.51.100.42,70,2026-08-20T11:00:00Z,command-and-control
+sha256,5A4DCC3B5AA765D61D8327DEB882CFBA3F9A613FAE2C35E3B94552DF89B68151,90,2026-08-20T10:00:00Z,malware

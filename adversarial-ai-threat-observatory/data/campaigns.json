@@ -1,0 +1,127 @@
+{
+  "campaigns": [
+    {
+      "campaign_id": "CAMP-2026-001",
+      "account_ids": [
+        "acct-a1",
+        "acct-a2",
+        "acct-a3",
+        "acct-b1",
+        "acct-b2"
+      ],
+      "confidence": 0.868,
+      "confidence_band": "high",
+      "first_seen": "2026-04-06T09:00:00Z",
+      "last_seen": "2026-04-11T00:07:20Z",
+      "waves": [
+        {
+          "wave": 1,
+          "account_ids": [
+            "acct-a1",
+            "acct-a2",
+            "acct-a3"
+          ],
+          "first_created": "2026-04-06T09:00:00Z",
+          "last_created": "2026-04-06T09:14:00Z",
+          "ip_prefixes": [
+            "203.0.113.0/24"
+          ],
+          "statuses": [
+            "suspended"
+          ]
+        },
+        {
+          "wave": 2,
+          "account_ids": [
+            "acct-b1",
+            "acct-b2"
+          ],
+          "first_created": "2026-04-10T09:00:00Z",
+          "last_created": "2026-04-10T10:00:00Z",
+          "ip_prefixes": [
+            "198.51.100.0/24"
+          ],
+          "statuses": [
+            "active"
+          ]
+        }
+      ],
+      "shared_infrastructure": {
+        "client_fingerprint": [
+          "fp_a4a7375171f0"
+        ],
+        "payment_fingerprint": [
+          "pay_5e3c5449786b",
+          "pay_f0213aa6e4f3"
+        ],
+        "signup_domain": [
+          "mailbox-drop.example"
+        ],
+        "ip_prefix": [
+          "198.51.100.0/24",
+          "203.0.113.0/24"
+        ],
+        "asn": [
+          "AS64500 SIMHOST-BV",
+          "AS64510 SIMVPN-LTD"
+        ]
+      },
+      "behaviors": [
+        "BEH-001",
+        "BEH-002",
+        "BEH-003",
+        "BEH-004",
+        "BEH-005",
+        "BEH-006"
+      ],
+      "artifacts": [
+        "domain:payroll-verify-portal.example",
+        "url:https://payroll-verify-portal.example/sso"
+      ],
+      "temporal_coordination": 0.75,
+      "strong_link_types": [
+        "client_fingerprint",
+        "payment_fingerprint",
+        "shared_artifact"
+      ],
+      "link_summary": [
+        {
+          "link_type": "client_fingerprint",
+          "occurrences": 10
+        },
+        {
+          "link_type": "signup_domain",
+          "occurrences": 10
+        },
+        {
+          "link_type": "shared_artifact",
+          "occurrences": 10
+        },
+        {
+          "link_type": "style_similarity",
+          "occurrences": 10
+        },
+        {
+          "link_type": "behavioral_fingerprint",
+          "occurrences": 10
+        },
+        {
+          "link_type": "payment_fingerprint",
+          "occurrences": 4
+        },
+        {
+          "link_type": "ip_prefix",
+          "occurrences": 4
+        },
+        {
+          "link_type": "asn",
+          "occurrences": 4
+        },
+        {
+          "link_type": "temporal_burst",
+          "occurrences": 4
+        }
+      ]
+    }
+  ]
+}

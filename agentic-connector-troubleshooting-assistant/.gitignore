@@ -1,0 +1,3 @@
+data/diagnostic_report.json
+__pycache__/
+*.py[cod]

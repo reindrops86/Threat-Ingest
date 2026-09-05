@@ -1,0 +1,210 @@
+{
+  "cases": [
+    {
+      "case_id": "abuse-20260818185125-8330",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-18T18:51:25.118292+00:00",
+      "updated_at": "2026-08-18T18:51:25.135295+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- jailbreak\n- phishing\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:secure-payroll.co",
+        "domain:payroll-login-secure.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co"
+      ],
+      "source_text_snippet": "A phishing lure from helpdesk@secure-payroll.co directs employees to https://payroll-login-secure.co/portal. The attacker asks the model to bypass safeguards and produce a credential theft script. The malicious IP is 185",
+      "related_cases": [],
+      "assignee": "Analyst A",
+      "notes": []
+    },
+    {
+      "case_id": "SOC-20260820003932-3552",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-20T00:39:32.774070+00:00",
+      "updated_at": "2026-08-20T00:39:32.852394+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- malware\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious sample in the local dataset.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co",
+        "domain:secure-payroll.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "SOC analyst intake: phishing lure targeting payroll users. The user reported a fake portal asking employees to login at https://payroll-login-secure.co/portal. The sender helpdesk@secure-payroll.co impersonates internal ",
+      "related_cases": [
+        "abuse-20260818185125-8330"
+      ],
+      "assignee": "Analyst A",
+      "notes": [],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    },
+    {
+      "case_id": "SOC-20260820003932-3552",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-20T00:39:32.812820+00:00",
+      "updated_at": "2026-08-20T00:39:32.812820+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- malware\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious sample in the local dataset.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co",
+        "domain:secure-payroll.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "SOC analyst intake: phishing lure targeting payroll users. The user reported a fake portal asking employees to login at https://payroll-login-secure.co/portal. The sender helpdesk@secure-payroll.co impersonates internal ",
+      "related_cases": [
+        "abuse-20260818185125-8330"
+      ],
+      "assignee": "Analyst A",
+      "notes": [],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    },
+    {
+      "case_id": "SOC-20260820003932-3552",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-20T00:39:32.838372+00:00",
+      "updated_at": "2026-08-20T00:39:32.838372+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- malware\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious sample in the local dataset.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co",
+        "domain:secure-payroll.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "SOC analyst intake: phishing lure targeting payroll users. The user reported a fake portal asking employees to login at https://payroll-login-secure.co/portal. The sender helpdesk@secure-payroll.co impersonates internal ",
+      "related_cases": [
+        "abuse-20260818185125-8330"
+      ],
+      "assignee": "Analyst A",
+      "notes": [],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    },
+    {
+      "case_id": "SOC-20260820014151-6166",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-20T01:41:51.468359+00:00",
+      "updated_at": "2026-08-20T01:41:51.493350+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- malware\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious sample in the local dataset.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co",
+        "domain:secure-payroll.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "SOC analyst intake: phishing lure targeting payroll users. The user reported a fake portal asking employees to login at https://payroll-login-secure.co/portal. The sender helpdesk@secure-payroll.co impersonates internal ",
+      "related_cases": [
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "abuse-20260818185125-8330"
+      ],
+      "assignee": "Analyst A",
+      "notes": [],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    },
+    {
+      "case_id": "SOC-20260820024624-8797",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "monitor",
+      "created_at": "2026-08-20T02:46:24.353567+00:00",
+      "updated_at": "2026-08-20T02:46:24.381271+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- malware\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n- HASH: 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | confidence=0.95 | tags=malware, execution\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.\n- Malicious HASH observed [High] | 9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5 | Hash matches a known suspicious sample in the local dataset.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:payroll-login-secure.co",
+        "domain:secure-payroll.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co",
+        "hash:9f1c4a2e5b6d7a88d0e9f9b2c1d3a4f5"
+      ],
+      "source_text_snippet": "SOC analyst intake: phishing lure targeting payroll users. The user reported a fake portal asking employees to login at https://payroll-login-secure.co/portal. The sender helpdesk@secure-payroll.co impersonates internal ",
+      "related_cases": [
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "SOC-20260820014151-6166",
+        "abuse-20260818185125-8330"
+      ],
+      "assignee": "Analyst A",
+      "notes": [],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    },
+    {
+      "case_id": "SOC-20260820033045-3663",
+      "title": "Critical model abuse case",
+      "priority": "P1",
+      "status": "assigned",
+      "created_at": "2026-08-20T03:30:45.663134+00:00",
+      "updated_at": "2026-08-20T03:30:45.679927+00:00",
+      "risk_score": 100,
+      "severity": "Critical",
+      "summary": "Adversarial model abuse investigation\n===================================\nRisk level: Critical (100/100)\n\nObserved behaviors:\n- phishing\n- credential_theft\n- social_engineering\n\nObserved indicators:\n- IP: 185.220.101.42 | confidence=0.85 | tags=network, infrastructure\n- DOMAIN: secure-payroll.co | confidence=0.80 | tags=host, suspicious-domain\n- DOMAIN: payroll-login-secure.co | confidence=0.80 | tags=host, suspicious-domain\n- URL: https://payroll-login-secure.co/portal | confidence=0.90 | tags=delivery, phishing\n- EMAIL: helpdesk@secure-payroll.co | confidence=0.88 | tags=phishing, social-engineering\n\nGenerated alerts:\n- Critical model abuse incident [Critical] | campaign | High-confidence phishing, credential theft, and prompt abuse behavior indicates active malicious activity.\n- Malicious IP observed [High] | 185.220.101.42 | Known malicious infrastructure associated with phishing and C2 behavior.",
+      "indicators": [
+        "ip:185.220.101.42",
+        "domain:secure-payroll.co",
+        "domain:payroll-login-secure.co",
+        "url:https://payroll-login-secure.co/portal",
+        "email:helpdesk@secure-payroll.co"
+      ],
+      "source_text_snippet": "A fake payroll portal asks employees to log in through helpdesk@secure-payroll.co and https://payroll-login-secure.co/portal. The attacker also instructs the model to ignore safeguards, reveal secrets, and generate a cre",
+      "related_cases": [
+        "abuse-20260818185125-8330",
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "SOC-20260820003932-3552",
+        "SOC-20260820014151-6166"
+      ],
+      "assignee": "Analyst A",
+      "notes": [
+        {
+          "analyst": "Analyst A",
+          "timestamp": "2026-08-20T03:30:45.663153+00:00",
+          "text": "Initial triage for phishing + prompt override attempt."
+        }
+      ],
+      "customer": "internal-users",
+      "type": "adversarial-model-abuse",
+      "source": "analyst-intake"
+    }
+  ]
+}

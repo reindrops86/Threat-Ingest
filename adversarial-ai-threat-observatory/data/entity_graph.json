@@ -1,0 +1,3550 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "acct-a1",
+        "type": "account",
+        "status": "suspended",
+        "created_at": "2026-04-06T09:00:00Z"
+      },
+      {
+        "id": "ip_prefix:203.0.113.0/24",
+        "type": "network",
+        "value": "203.0.113.0/24"
+      },
+      {
+        "id": "asn:AS64500 SIMHOST-BV",
+        "type": "asn",
+        "value": "AS64500 SIMHOST-BV"
+      },
+      {
+        "id": "client_fingerprint:fp_a4a7375171f0",
+        "type": "client_fingerprint",
+        "value": "fp_a4a7375171f0"
+      },
+      {
+        "id": "signup_domain:mailbox-drop.example",
+        "type": "domain",
+        "value": "mailbox-drop.example"
+      },
+      {
+        "id": "payment_fingerprint:pay_5e3c5449786b",
+        "type": "payment",
+        "value": "pay_5e3c5449786b"
+      },
+      {
+        "id": "domain:payroll-verify-portal.example",
+        "type": "artifact",
+        "value": "domain:payroll-verify-portal.example"
+      },
+      {
+        "id": "url:https://payroll-verify-portal.example/sso",
+        "type": "artifact",
+        "value": "url:https://payroll-verify-portal.example/sso"
+      },
+      {
+        "id": "acct-a2",
+        "type": "account",
+        "status": "suspended",
+        "created_at": "2026-04-06T09:07:00Z"
+      },
+      {
+        "id": "acct-a3",
+        "type": "account",
+        "status": "suspended",
+        "created_at": "2026-04-06T09:14:00Z"
+      },
+      {
+        "id": "acct-b1",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-10T09:00:00Z"
+      },
+      {
+        "id": "ip_prefix:198.51.100.0/24",
+        "type": "network",
+        "value": "198.51.100.0/24"
+      },
+      {
+        "id": "asn:AS64510 SIMVPN-LTD",
+        "type": "asn",
+        "value": "AS64510 SIMVPN-LTD"
+      },
+      {
+        "id": "payment_fingerprint:pay_f0213aa6e4f3",
+        "type": "payment",
+        "value": "pay_f0213aa6e4f3"
+      },
+      {
+        "id": "acct-b2",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-10T10:00:00Z"
+      },
+      {
+        "id": "acct-sec1",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T09:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_6e9534d7fcff",
+        "type": "client_fingerprint",
+        "value": "fp_6e9534d7fcff"
+      },
+      {
+        "id": "signup_domain:northwind-training.example",
+        "type": "domain",
+        "value": "northwind-training.example"
+      },
+      {
+        "id": "acct-sec2",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T12:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_d97ea58be22a",
+        "type": "client_fingerprint",
+        "value": "fp_d97ea58be22a"
+      },
+      {
+        "id": "acct-sec3",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T15:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_b1b0a41d9bf1",
+        "type": "client_fingerprint",
+        "value": "fp_b1b0a41d9bf1"
+      },
+      {
+        "id": "acct-u01",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-09T00:00:00Z"
+      },
+      {
+        "id": "ip_prefix:192.0.2.0/24",
+        "type": "network",
+        "value": "192.0.2.0/24"
+      },
+      {
+        "id": "asn:AS64510 SIMISP",
+        "type": "asn",
+        "value": "AS64510 SIMISP"
+      },
+      {
+        "id": "client_fingerprint:fp_37bec5724d74",
+        "type": "client_fingerprint",
+        "value": "fp_37bec5724d74"
+      },
+      {
+        "id": "acct-u02",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-10T12:00:00Z"
+      },
+      {
+        "id": "asn:AS64511 SIMISP",
+        "type": "asn",
+        "value": "AS64511 SIMISP"
+      },
+      {
+        "id": "client_fingerprint:fp_18829f9d8fad",
+        "type": "client_fingerprint",
+        "value": "fp_18829f9d8fad"
+      },
+      {
+        "id": "acct-u03",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-10T01:00:00Z"
+      },
+      {
+        "id": "asn:AS64512 SIMISP",
+        "type": "asn",
+        "value": "AS64512 SIMISP"
+      },
+      {
+        "id": "client_fingerprint:fp_dc1e5b15f3a3",
+        "type": "client_fingerprint",
+        "value": "fp_dc1e5b15f3a3"
+      },
+      {
+        "id": "acct-u04",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-08T03:00:00Z"
+      },
+      {
+        "id": "asn:AS64513 SIMISP",
+        "type": "asn",
+        "value": "AS64513 SIMISP"
+      },
+      {
+        "id": "client_fingerprint:fp_864c74d563e6",
+        "type": "client_fingerprint",
+        "value": "fp_864c74d563e6"
+      },
+      {
+        "id": "acct-u05",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-08T00:00:00Z"
+      },
+      {
+        "id": "asn:AS64514 SIMISP",
+        "type": "asn",
+        "value": "AS64514 SIMISP"
+      },
+      {
+        "id": "client_fingerprint:fp_46e2d112ea6a",
+        "type": "client_fingerprint",
+        "value": "fp_46e2d112ea6a"
+      },
+      {
+        "id": "acct-u06",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-10T21:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_3e552ec30442",
+        "type": "client_fingerprint",
+        "value": "fp_3e552ec30442"
+      },
+      {
+        "id": "acct-u07",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-08T13:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_cca0ab3748c1",
+        "type": "client_fingerprint",
+        "value": "fp_cca0ab3748c1"
+      },
+      {
+        "id": "acct-u08",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-09T15:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_e3125b8d136c",
+        "type": "client_fingerprint",
+        "value": "fp_e3125b8d136c"
+      },
+      {
+        "id": "acct-u09",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-08T03:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_37ca0a34b778",
+        "type": "client_fingerprint",
+        "value": "fp_37ca0a34b778"
+      },
+      {
+        "id": "acct-u10",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T17:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_44947a339cd8",
+        "type": "client_fingerprint",
+        "value": "fp_44947a339cd8"
+      },
+      {
+        "id": "acct-u11",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T09:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_da714978daf0",
+        "type": "client_fingerprint",
+        "value": "fp_da714978daf0"
+      },
+      {
+        "id": "acct-u12",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T14:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_b5f5493825b5",
+        "type": "client_fingerprint",
+        "value": "fp_b5f5493825b5"
+      },
+      {
+        "id": "acct-u13",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-11T08:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_993349d7b96a",
+        "type": "client_fingerprint",
+        "value": "fp_993349d7b96a"
+      },
+      {
+        "id": "acct-u14",
+        "type": "account",
+        "status": "active",
+        "created_at": "2026-04-07T15:00:00Z"
+      },
+      {
+        "id": "client_fingerprint:fp_0f7bc8faed1f",
+        "type": "client_fingerprint",
+        "value": "fp_0f7bc8faed1f"
+      }
+    ],
+    "edges": [
+      {
+        "source": "acct-a1",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "client_fingerprint:fp_a4a7375171f0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "signup_domain:mailbox-drop.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "payment_fingerprint:pay_5e3c5449786b",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "domain:payroll-verify-portal.example",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-a1",
+        "target": "url:https://payroll-verify-portal.example/sso",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-a2",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a2",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a2",
+        "target": "client_fingerprint:fp_a4a7375171f0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a2",
+        "target": "signup_domain:mailbox-drop.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a2",
+        "target": "payment_fingerprint:pay_5e3c5449786b",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a2",
+        "target": "domain:payroll-verify-portal.example",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-a2",
+        "target": "url:https://payroll-verify-portal.example/sso",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-a3",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a3",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a3",
+        "target": "client_fingerprint:fp_a4a7375171f0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a3",
+        "target": "signup_domain:mailbox-drop.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a3",
+        "target": "payment_fingerprint:pay_5e3c5449786b",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a3",
+        "target": "domain:payroll-verify-portal.example",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-a3",
+        "target": "url:https://payroll-verify-portal.example/sso",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-b1",
+        "target": "ip_prefix:198.51.100.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b1",
+        "target": "asn:AS64510 SIMVPN-LTD",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b1",
+        "target": "client_fingerprint:fp_a4a7375171f0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b1",
+        "target": "signup_domain:mailbox-drop.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b1",
+        "target": "payment_fingerprint:pay_f0213aa6e4f3",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b1",
+        "target": "domain:payroll-verify-portal.example",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-b2",
+        "target": "ip_prefix:198.51.100.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b2",
+        "target": "asn:AS64510 SIMVPN-LTD",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b2",
+        "target": "client_fingerprint:fp_a4a7375171f0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b2",
+        "target": "signup_domain:mailbox-drop.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b2",
+        "target": "payment_fingerprint:pay_f0213aa6e4f3",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-b2",
+        "target": "domain:payroll-verify-portal.example",
+        "relationship": "touched",
+        "confidence": 1.0,
+        "explanation": "Tool call referenced this artifact."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "client_fingerprint:fp_6e9534d7fcff",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "signup_domain:northwind-training.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec2",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec2",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec2",
+        "target": "client_fingerprint:fp_d97ea58be22a",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec2",
+        "target": "signup_domain:northwind-training.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec3",
+        "target": "ip_prefix:203.0.113.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec3",
+        "target": "asn:AS64500 SIMHOST-BV",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec3",
+        "target": "client_fingerprint:fp_b1b0a41d9bf1",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-sec3",
+        "target": "signup_domain:northwind-training.example",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u01",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u01",
+        "target": "asn:AS64510 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u01",
+        "target": "client_fingerprint:fp_37bec5724d74",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u02",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u02",
+        "target": "asn:AS64511 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u02",
+        "target": "client_fingerprint:fp_18829f9d8fad",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u03",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u03",
+        "target": "asn:AS64512 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u03",
+        "target": "client_fingerprint:fp_dc1e5b15f3a3",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u04",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u04",
+        "target": "asn:AS64513 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u04",
+        "target": "client_fingerprint:fp_864c74d563e6",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u05",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u05",
+        "target": "asn:AS64514 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u05",
+        "target": "client_fingerprint:fp_46e2d112ea6a",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u06",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u06",
+        "target": "asn:AS64510 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u06",
+        "target": "client_fingerprint:fp_3e552ec30442",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u07",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u07",
+        "target": "asn:AS64511 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u07",
+        "target": "client_fingerprint:fp_cca0ab3748c1",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u08",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u08",
+        "target": "asn:AS64512 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u08",
+        "target": "client_fingerprint:fp_e3125b8d136c",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u09",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u09",
+        "target": "asn:AS64513 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u09",
+        "target": "client_fingerprint:fp_37ca0a34b778",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u10",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u10",
+        "target": "asn:AS64514 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u10",
+        "target": "client_fingerprint:fp_44947a339cd8",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u11",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u11",
+        "target": "asn:AS64510 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u11",
+        "target": "client_fingerprint:fp_da714978daf0",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u12",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u12",
+        "target": "asn:AS64511 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u12",
+        "target": "client_fingerprint:fp_b5f5493825b5",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u13",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u13",
+        "target": "asn:AS64512 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u13",
+        "target": "client_fingerprint:fp_993349d7b96a",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u14",
+        "target": "ip_prefix:192.0.2.0/24",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u14",
+        "target": "asn:AS64513 SIMISP",
+        "relationship": "observed_from",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-u14",
+        "target": "client_fingerprint:fp_0f7bc8faed1f",
+        "relationship": "presents",
+        "confidence": 1.0,
+        "explanation": "Directly observed in first-party telemetry."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-a2",
+        "relationship": "linked_to",
+        "confidence": 0.933,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present identical payment fingerprint (pay_5e3c5449786b). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso. Rarity-weighted phrasing overlap 0.95. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005. Created 0.1h apart."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-a3",
+        "relationship": "linked_to",
+        "confidence": 0.933,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present identical payment fingerprint (pay_5e3c5449786b). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso. Rarity-weighted phrasing overlap 0.95. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005. Created 0.1h apart."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-a3",
+        "relationship": "linked_to",
+        "confidence": 0.933,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present identical payment fingerprint (pay_5e3c5449786b). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso. Rarity-weighted phrasing overlap 0.96. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005. Created 0.2h apart."
+      },
+      {
+        "source": "acct-b1",
+        "target": "acct-b2",
+        "relationship": "linked_to",
+        "confidence": 0.932,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present identical payment fingerprint (pay_f0213aa6e4f3). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts present same /24 network prefix (198.51.100.0/24). Both accounts present same autonomous system (AS64510 SIMVPN-LTD). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.96. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-004, BEH-005, BEH-006. Created 1.0h apart."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-b1",
+        "relationship": "linked_to",
+        "confidence": 0.819,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.24. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-a3",
+        "target": "acct-b2",
+        "relationship": "linked_to",
+        "confidence": 0.819,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.23. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-b2",
+        "relationship": "linked_to",
+        "confidence": 0.818,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.23. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-a3",
+        "target": "acct-b1",
+        "relationship": "linked_to",
+        "confidence": 0.818,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.23. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-b1",
+        "relationship": "linked_to",
+        "confidence": 0.818,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.23. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-b2",
+        "relationship": "linked_to",
+        "confidence": 0.818,
+        "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0). Both accounts present same signup mail domain (mailbox-drop.example). Both accounts directed tool calls at domain:payroll-verify-portal.example. Rarity-weighted phrasing overlap 0.23. Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "acct-sec2",
+        "relationship": "linked_to",
+        "confidence": 0.55,
+        "explanation": "Both accounts present same signup mail domain (northwind-training.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to. Created 3.0h apart."
+      },
+      {
+        "source": "acct-sec1",
+        "target": "acct-sec3",
+        "relationship": "linked_to",
+        "confidence": 0.55,
+        "explanation": "Both accounts present same signup mail domain (northwind-training.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to. Created 6.0h apart."
+      },
+      {
+        "source": "acct-sec2",
+        "target": "acct-sec3",
+        "relationship": "linked_to",
+        "confidence": 0.55,
+        "explanation": "Both accounts present same signup mail domain (northwind-training.example). Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV). Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to. Created 3.0h apart."
+      },
+      {
+        "source": "acct-u10",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.47,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.58. Created 2.0h apart."
+      },
+      {
+        "source": "acct-u09",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.469,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64513 SIMISP). Rarity-weighted phrasing overlap 0.84; distinctive shared phrases: portugal. Created 12.0h apart."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u05",
+        "relationship": "linked_to",
+        "confidence": 0.463,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.49; distinctive shared phrases: explain, difference, between. Created 3.0h apart."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.447,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.63; distinctive shared phrases: explain. Created 10.0h apart."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.447,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.63; distinctive shared phrases: quarterly. Created 10.0h apart."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.446,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.49. Created 9.0h apart."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.44,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64514 SIMISP). Rarity-weighted phrasing overlap 0.40; distinctive shared phrases: for a. Created 7.0h apart."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.438,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: for a. Created 13.0h apart."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.438,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.53; distinctive shared phrases: explain, difference, between. Created 13.0h apart."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.435,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64510 SIMISP). Rarity-weighted phrasing overlap 0.57; distinctive shared phrases: letter."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.435,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64512 SIMISP). Rarity-weighted phrasing overlap 0.55; distinctive shared phrases: names for, suggest."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.432,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.80; distinctive shared phrases: letter. Created 15.0h apart."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.424,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.45; distinctive shared phrases: for a, suggest. Created 10.0h apart."
+      },
+      {
+        "source": "acct-u10",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.419,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.39; distinctive shared phrases: for a. Created 3.0h apart."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.413,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.38. Created 3.0h apart."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.56."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.58."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u05",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: for a."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.69."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.58; distinctive shared phrases: for a."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.72."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u06",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.57; distinctive shared phrases: quarterly, spreadsheet."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u06",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.54; distinctive shared phrases: letter."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.61; distinctive shared phrases: for a, names for."
+      },
+      {
+        "source": "acct-u05",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.55; distinctive shared phrases: explain, difference, between."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.52; distinctive shared phrases: explain, difference, between."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: quarterly, spreadsheet."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.59; distinctive shared phrases: quarterly, spreadsheet."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.59; distinctive shared phrases: spanish explain, explain, difference."
+      },
+      {
+        "source": "acct-u12",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.405,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.53; distinctive shared phrases: suggest, community, gardening."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.401,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: quarterly. Created 20.0h apart."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.401,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: names for. Created 21.0h apart."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u03",
+        "relationship": "linked_to",
+        "confidence": 0.399,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.41. Created 11.0h apart."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u04",
+        "relationship": "linked_to",
+        "confidence": 0.398,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.49."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u05",
+        "relationship": "linked_to",
+        "confidence": 0.397,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.48; distinctive shared phrases: letter."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.392,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: letter."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.392,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: for a, names for."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.392,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: semaphore can, explain, difference."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.39,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: explain, difference, between."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.39,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64513 SIMISP). Rarity-weighted phrasing overlap 0.33. Created 12.0h apart."
+      },
+      {
+        "source": "acct-u10",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.372,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.33; distinctive shared phrases: letter. Created 8.0h apart."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.371,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.35; distinctive shared phrases: review, readability. Created 11.0h apart."
+      },
+      {
+        "source": "acct-u11",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.37,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.30; distinctive shared phrases: for a. Created 5.0h apart."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.37,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.43."
+      },
+      {
+        "source": "acct-u11",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.367,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.30; distinctive shared phrases: letter. Created 6.0h apart."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.363,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.33; distinctive shared phrases: explain, difference, between. Created 11.0h apart."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.362,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.42; distinctive shared phrases: letter."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.355,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.36. Created 18.0h apart."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.354,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.40; distinctive shared phrases: invoice translate, explain, difference."
+      },
+      {
+        "source": "acct-u09",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.352,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.30. Created 10.0h apart."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.35,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.39; distinctive shared phrases: for a, names for."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u06",
+        "relationship": "linked_to",
+        "confidence": 0.34,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.27; distinctive shared phrases: letter. Created 9.0h apart."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.339,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.37; distinctive shared phrases: for a, quarterly."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.312,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64511 SIMISP). Rarity-weighted phrasing overlap 0.24; distinctive shared phrases: translate, product, description. Created 23.0h apart."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.311,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.32; distinctive shared phrases: quarterly."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.305,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64512 SIMISP). Rarity-weighted phrasing overlap 0.23; distinctive shared phrases: translate, product, description."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.305,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.29; distinctive shared phrases: translate. Created 22.0h apart."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.304,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.30; distinctive shared phrases: for a."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.3,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.29."
+      },
+      {
+        "source": "acct-u11",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.292,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.28; distinctive shared phrases: explain, difference, between."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u10",
+        "relationship": "linked_to",
+        "confidence": 0.289,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.27; distinctive shared phrases: review."
+      },
+      {
+        "source": "acct-u10",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.276,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.25; distinctive shared phrases: suggest."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.269,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Rarity-weighted phrasing overlap 0.23; distinctive shared phrases: translate, product, description."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-sec1",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-sec2",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a1",
+        "target": "acct-sec3",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-sec1",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-sec2",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a2",
+        "target": "acct-sec3",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a3",
+        "target": "acct-sec1",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a3",
+        "target": "acct-sec2",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-a3",
+        "target": "acct-sec3",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24). Both accounts present same autonomous system (AS64500 SIMHOST-BV)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u06",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64510 SIMISP)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64510 SIMISP)."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u07",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64511 SIMISP)."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64511 SIMISP)."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64512 SIMISP)."
+      },
+      {
+        "source": "acct-u04",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.193,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24). Both accounts present same autonomous system (AS64513 SIMISP)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u02",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u03",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u04",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u05",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u08",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u01",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u04",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u02",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u03",
+        "target": "acct-u06",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u06",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u07",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u09",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u08",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u09",
+        "target": "acct-u11",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u09",
+        "target": "acct-u12",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u09",
+        "target": "acct-u13",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u12",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      },
+      {
+        "source": "acct-u13",
+        "target": "acct-u14",
+        "relationship": "linked_to",
+        "confidence": 0.15,
+        "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24)."
+      }
+    ],
+    "node_count": 56,
+    "edge_count": 200
+  },
+  "account_links": [
+    {
+      "source": "acct-a1",
+      "target": "acct-a2",
+      "confidence": 0.933,
+      "strong_link_count": 3,
+      "links": [
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "payment_fingerprint",
+          "weight": 0.3,
+          "strength": "strong",
+          "explanation": "Both accounts present identical payment fingerprint (pay_5e3c5449786b).",
+          "shared_value": "pay_5e3c5449786b"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.95.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.22,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a2",
+          "link_type": "temporal_burst",
+          "weight": 0.119,
+          "strength": "weak",
+          "explanation": "Created 0.1h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a2",
+      "target": "acct-a3",
+      "confidence": 0.933,
+      "strong_link_count": 3,
+      "links": [
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "payment_fingerprint",
+          "weight": 0.3,
+          "strength": "strong",
+          "explanation": "Both accounts present identical payment fingerprint (pay_5e3c5449786b).",
+          "shared_value": "pay_5e3c5449786b"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.95.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.22,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-a3",
+          "link_type": "temporal_burst",
+          "weight": 0.119,
+          "strength": "weak",
+          "explanation": "Created 0.1h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a1",
+      "target": "acct-a3",
+      "confidence": 0.933,
+      "strong_link_count": 3,
+      "links": [
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "payment_fingerprint",
+          "weight": 0.3,
+          "strength": "strong",
+          "explanation": "Both accounts present identical payment fingerprint (pay_5e3c5449786b).",
+          "shared_value": "pay_5e3c5449786b"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example, url:https://payroll-verify-portal.example/sso.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.96.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.22,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-a3",
+          "link_type": "temporal_burst",
+          "weight": 0.119,
+          "strength": "weak",
+          "explanation": "Created 0.2h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-b1",
+      "target": "acct-b2",
+      "confidence": 0.932,
+      "strong_link_count": 3,
+      "links": [
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "payment_fingerprint",
+          "weight": 0.3,
+          "strength": "strong",
+          "explanation": "Both accounts present identical payment fingerprint (pay_f0213aa6e4f3).",
+          "shared_value": "pay_f0213aa6e4f3"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (198.51.100.0/24).",
+          "shared_value": "198.51.100.0/24"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64510 SIMVPN-LTD).",
+          "shared_value": "AS64510 SIMVPN-LTD"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.96.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.22,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-004, BEH-005, BEH-006.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-b1",
+          "target": "acct-b2",
+          "link_type": "temporal_burst",
+          "weight": 0.115,
+          "strength": "weak",
+          "explanation": "Created 1.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a1",
+      "target": "acct-b1",
+      "confidence": 0.819,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a1",
+          "target": "acct-b1",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b1",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b1",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b1",
+          "link_type": "style_similarity",
+          "weight": 0.143,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.24.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b1",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a3",
+      "target": "acct-b2",
+      "confidence": 0.819,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a3",
+          "target": "acct-b2",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b2",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b2",
+          "link_type": "style_similarity",
+          "weight": 0.141,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.23.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b2",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a1",
+      "target": "acct-b2",
+      "confidence": 0.818,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a1",
+          "target": "acct-b2",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b2",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b2",
+          "link_type": "style_similarity",
+          "weight": 0.141,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.23.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a1",
+          "target": "acct-b2",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a3",
+      "target": "acct-b1",
+      "confidence": 0.818,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a3",
+          "target": "acct-b1",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b1",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b1",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b1",
+          "link_type": "style_similarity",
+          "weight": 0.14,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.23.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a3",
+          "target": "acct-b1",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a2",
+      "target": "acct-b1",
+      "confidence": 0.818,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a2",
+          "target": "acct-b1",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b1",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b1",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b1",
+          "link_type": "style_similarity",
+          "weight": 0.139,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.23.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b1",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-a2",
+      "target": "acct-b2",
+      "confidence": 0.818,
+      "strong_link_count": 2,
+      "links": [
+        {
+          "source": "acct-a2",
+          "target": "acct-b2",
+          "link_type": "client_fingerprint",
+          "weight": 0.45,
+          "strength": "strong",
+          "explanation": "Both accounts present identical client fingerprint (fp_a4a7375171f0).",
+          "shared_value": "fp_a4a7375171f0"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (mailbox-drop.example).",
+          "shared_value": "mailbox-drop.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b2",
+          "link_type": "shared_artifact",
+          "weight": 0.4,
+          "strength": "strong",
+          "explanation": "Both accounts directed tool calls at domain:payroll-verify-portal.example.",
+          "shared_value": "domain:payroll-verify-portal.example"
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b2",
+          "link_type": "style_similarity",
+          "weight": 0.138,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.23.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-a2",
+          "target": "acct-b2",
+          "link_type": "behavioral_fingerprint",
+          "weight": 0.147,
+          "strength": "moderate",
+          "explanation": "Same behavioral detections fired on both accounts: BEH-001, BEH-002, BEH-003, BEH-005.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-sec1",
+      "target": "acct-sec2",
+      "confidence": 0.55,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec2",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (northwind-training.example).",
+          "shared_value": "northwind-training.example"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec2",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec2",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec2",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to.",
+          "shared_value": "how to"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec2",
+          "link_type": "temporal_burst",
+          "weight": 0.105,
+          "strength": "weak",
+          "explanation": "Created 3.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-sec1",
+      "target": "acct-sec3",
+      "confidence": 0.55,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec3",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (northwind-training.example).",
+          "shared_value": "northwind-training.example"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec3",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec3",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec3",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to.",
+          "shared_value": "how to"
+        },
+        {
+          "source": "acct-sec1",
+          "target": "acct-sec3",
+          "link_type": "temporal_burst",
+          "weight": 0.09,
+          "strength": "weak",
+          "explanation": "Created 6.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-sec2",
+      "target": "acct-sec3",
+      "confidence": 0.55,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-sec2",
+          "target": "acct-sec3",
+          "link_type": "signup_domain",
+          "weight": 0.25,
+          "strength": "moderate",
+          "explanation": "Both accounts present same signup mail domain (northwind-training.example).",
+          "shared_value": "northwind-training.example"
+        },
+        {
+          "source": "acct-sec2",
+          "target": "acct-sec3",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (203.0.113.0/24).",
+          "shared_value": "203.0.113.0/24"
+        },
+        {
+          "source": "acct-sec2",
+          "target": "acct-sec3",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64500 SIMHOST-BV).",
+          "shared_value": "AS64500 SIMHOST-BV"
+        },
+        {
+          "source": "acct-sec2",
+          "target": "acct-sec3",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 1.00; distinctive shared phrases: how to.",
+          "shared_value": "how to"
+        },
+        {
+          "source": "acct-sec2",
+          "target": "acct-sec3",
+          "link_type": "temporal_burst",
+          "weight": 0.105,
+          "strength": "weak",
+          "explanation": "Created 3.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u10",
+      "target": "acct-u14",
+      "confidence": 0.47,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u10",
+          "target": "acct-u14",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u10",
+          "target": "acct-u14",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.58.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-u10",
+          "target": "acct-u14",
+          "link_type": "temporal_burst",
+          "weight": 0.11,
+          "strength": "weak",
+          "explanation": "Created 2.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u09",
+      "target": "acct-u14",
+      "confidence": 0.469,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u09",
+          "target": "acct-u14",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u09",
+          "target": "acct-u14",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64513 SIMISP).",
+          "shared_value": "AS64513 SIMISP"
+        },
+        {
+          "source": "acct-u09",
+          "target": "acct-u14",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.84; distinctive shared phrases: portugal.",
+          "shared_value": "portugal"
+        },
+        {
+          "source": "acct-u09",
+          "target": "acct-u14",
+          "link_type": "temporal_burst",
+          "weight": 0.06,
+          "strength": "weak",
+          "explanation": "Created 12.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u04",
+      "target": "acct-u05",
+      "confidence": 0.463,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u04",
+          "target": "acct-u05",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u05",
+          "link_type": "style_similarity",
+          "weight": 0.294,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.49; distinctive shared phrases: explain, difference, between.",
+          "shared_value": "explain|difference|between"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u05",
+          "link_type": "temporal_burst",
+          "weight": 0.105,
+          "strength": "weak",
+          "explanation": "Created 3.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u04",
+      "target": "acct-u07",
+      "confidence": 0.447,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u04",
+          "target": "acct-u07",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u07",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.63; distinctive shared phrases: explain.",
+          "shared_value": "explain"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u07",
+          "link_type": "temporal_burst",
+          "weight": 0.07,
+          "strength": "weak",
+          "explanation": "Created 10.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u04",
+      "target": "acct-u10",
+      "confidence": 0.447,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u04",
+          "target": "acct-u10",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u10",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.63; distinctive shared phrases: quarterly.",
+          "shared_value": "quarterly"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u10",
+          "link_type": "temporal_burst",
+          "weight": 0.07,
+          "strength": "weak",
+          "explanation": "Created 10.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u14",
+      "confidence": 0.446,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u14",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u14",
+          "link_type": "style_similarity",
+          "weight": 0.296,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.49.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u14",
+          "link_type": "temporal_burst",
+          "weight": 0.075,
+          "strength": "weak",
+          "explanation": "Created 9.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u10",
+      "confidence": 0.44,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u10",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u10",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64514 SIMISP).",
+          "shared_value": "AS64514 SIMISP"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u10",
+          "link_type": "style_similarity",
+          "weight": 0.242,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.40; distinctive shared phrases: for a.",
+          "shared_value": "for a"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u10",
+          "link_type": "temporal_burst",
+          "weight": 0.085,
+          "strength": "weak",
+          "explanation": "Created 7.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u04",
+      "target": "acct-u12",
+      "confidence": 0.438,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u04",
+          "target": "acct-u12",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u12",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: for a.",
+          "shared_value": "for a"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u12",
+          "link_type": "temporal_burst",
+          "weight": 0.055,
+          "strength": "weak",
+          "explanation": "Created 13.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u07",
+      "confidence": 0.438,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u07",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u07",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.53; distinctive shared phrases: explain, difference, between.",
+          "shared_value": "explain|difference|between"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u07",
+          "link_type": "temporal_burst",
+          "weight": 0.055,
+          "strength": "weak",
+          "explanation": "Created 13.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u06",
+      "target": "acct-u11",
+      "confidence": 0.435,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u06",
+          "target": "acct-u11",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u06",
+          "target": "acct-u11",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64510 SIMISP).",
+          "shared_value": "AS64510 SIMISP"
+        },
+        {
+          "source": "acct-u06",
+          "target": "acct-u11",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.57; distinctive shared phrases: letter.",
+          "shared_value": "letter"
+        }
+      ]
+    },
+    {
+      "source": "acct-u08",
+      "target": "acct-u13",
+      "confidence": 0.435,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u08",
+          "target": "acct-u13",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u08",
+          "target": "acct-u13",
+          "link_type": "asn",
+          "weight": 0.05,
+          "strength": "weak",
+          "explanation": "Both accounts present same autonomous system (AS64512 SIMISP).",
+          "shared_value": "AS64512 SIMISP"
+        },
+        {
+          "source": "acct-u08",
+          "target": "acct-u13",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.55; distinctive shared phrases: names for, suggest.",
+          "shared_value": "names for|suggest"
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u11",
+      "confidence": 0.432,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u11",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u11",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.80; distinctive shared phrases: letter.",
+          "shared_value": "letter"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u11",
+          "link_type": "temporal_burst",
+          "weight": 0.045,
+          "strength": "weak",
+          "explanation": "Created 15.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u12",
+      "confidence": 0.424,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u12",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u12",
+          "link_type": "style_similarity",
+          "weight": 0.271,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.45; distinctive shared phrases: for a, suggest.",
+          "shared_value": "for a|suggest"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u12",
+          "link_type": "temporal_burst",
+          "weight": 0.07,
+          "strength": "weak",
+          "explanation": "Created 10.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u10",
+      "target": "acct-u12",
+      "confidence": 0.419,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u10",
+          "target": "acct-u12",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u10",
+          "target": "acct-u12",
+          "link_type": "style_similarity",
+          "weight": 0.237,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.39; distinctive shared phrases: for a.",
+          "shared_value": "for a"
+        },
+        {
+          "source": "acct-u10",
+          "target": "acct-u12",
+          "link_type": "temporal_burst",
+          "weight": 0.105,
+          "strength": "weak",
+          "explanation": "Created 3.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u09",
+      "confidence": 0.413,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u09",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u09",
+          "link_type": "style_similarity",
+          "weight": 0.229,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.38.",
+          "shared_value": ""
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u09",
+          "link_type": "temporal_burst",
+          "weight": 0.105,
+          "strength": "weak",
+          "explanation": "Created 3.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u02",
+      "target": "acct-u09",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u02",
+          "target": "acct-u09",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u02",
+          "target": "acct-u09",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.56.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u02",
+      "target": "acct-u14",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u02",
+          "target": "acct-u14",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u02",
+          "target": "acct-u14",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.58.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u03",
+      "target": "acct-u05",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u03",
+          "target": "acct-u05",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u03",
+          "target": "acct-u05",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: for a.",
+          "shared_value": "for a"
+        }
+      ]
+    },
+    {
+      "source": "acct-u03",
+      "target": "acct-u09",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u03",
+          "target": "acct-u09",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u03",
+          "target": "acct-u09",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.69.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u03",
+      "target": "acct-u12",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u03",
+          "target": "acct-u12",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u03",
+          "target": "acct-u12",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.58; distinctive shared phrases: for a.",
+          "shared_value": "for a"
+        }
+      ]
+    },
+    {
+      "source": "acct-u03",
+      "target": "acct-u14",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u03",
+          "target": "acct-u14",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u03",
+          "target": "acct-u14",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.72.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u04",
+      "target": "acct-u06",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u04",
+          "target": "acct-u06",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u04",
+          "target": "acct-u06",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.57; distinctive shared phrases: quarterly, spreadsheet.",
+          "shared_value": "quarterly|spreadsheet"
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u06",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u06",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u06",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.54; distinctive shared phrases: letter.",
+          "shared_value": "letter"
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u08",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u08",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u08",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.61; distinctive shared phrases: for a, names for.",
+          "shared_value": "for a|names for"
+        }
+      ]
+    },
+    {
+      "source": "acct-u05",
+      "target": "acct-u13",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u05",
+          "target": "acct-u13",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u05",
+          "target": "acct-u13",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.55; distinctive shared phrases: explain, difference, between.",
+          "shared_value": "explain|difference|between"
+        }
+      ]
+    },
+    {
+      "source": "acct-u06",
+      "target": "acct-u07",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u06",
+          "target": "acct-u07",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u06",
+          "target": "acct-u07",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.52; distinctive shared phrases: explain, difference, between.",
+          "shared_value": "explain|difference|between"
+        }
+      ]
+    },
+    {
+      "source": "acct-u06",
+      "target": "acct-u08",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u06",
+          "target": "acct-u08",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u06",
+          "target": "acct-u08",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.51; distinctive shared phrases: quarterly, spreadsheet.",
+          "shared_value": "quarterly|spreadsheet"
+        }
+      ]
+    },
+    {
+      "source": "acct-u06",
+      "target": "acct-u10",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u06",
+          "target": "acct-u10",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u06",
+          "target": "acct-u10",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.59; distinctive shared phrases: quarterly, spreadsheet.",
+          "shared_value": "quarterly|spreadsheet"
+        }
+      ]
+    },
+    {
+      "source": "acct-u07",
+      "target": "acct-u13",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u07",
+          "target": "acct-u13",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u07",
+          "target": "acct-u13",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.59; distinctive shared phrases: spanish explain, explain, difference.",
+          "shared_value": "spanish explain|explain|difference"
+        }
+      ]
+    },
+    {
+      "source": "acct-u12",
+      "target": "acct-u13",
+      "confidence": 0.405,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u12",
+          "target": "acct-u13",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u12",
+          "target": "acct-u13",
+          "link_type": "style_similarity",
+          "weight": 0.3,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.53; distinctive shared phrases: suggest, community, gardening.",
+          "shared_value": "suggest|community|gardening"
+        }
+      ]
+    },
+    {
+      "source": "acct-u07",
+      "target": "acct-u10",
+      "confidence": 0.401,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u07",
+          "target": "acct-u10",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u07",
+          "target": "acct-u10",
+          "link_type": "style_similarity",
+          "weight": 0.281,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: quarterly.",
+          "shared_value": "quarterly"
+        },
+        {
+          "source": "acct-u07",
+          "target": "acct-u10",
+          "link_type": "temporal_burst",
+          "weight": 0.02,
+          "strength": "weak",
+          "explanation": "Created 20.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    },
+    {
+      "source": "acct-u02",
+      "target": "acct-u08",
+      "confidence": 0.401,
+      "strong_link_count": 0,
+      "links": [
+        {
+          "source": "acct-u02",
+          "target": "acct-u08",
+          "link_type": "ip_prefix",
+          "weight": 0.15,
+          "strength": "weak",
+          "explanation": "Both accounts present same /24 network prefix (192.0.2.0/24).",
+          "shared_value": "192.0.2.0/24"
+        },
+        {
+          "source": "acct-u02",
+          "target": "acct-u08",
+          "link_type": "style_similarity",
+          "weight": 0.285,
+          "strength": "moderate",
+          "explanation": "Rarity-weighted phrasing overlap 0.47; distinctive shared phrases: names for.",
+          "shared_value": "names for"
+        },
+        {
+          "source": "acct-u02",
+          "target": "acct-u08",
+          "link_type": "temporal_burst",
+          "weight": 0.015,
+          "strength": "weak",
+          "explanation": "Created 21.0h apart.",
+          "shared_value": ""
+        }
+      ]
+    }
+  ]
+}

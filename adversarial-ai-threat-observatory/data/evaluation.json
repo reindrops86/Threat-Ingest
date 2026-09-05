@@ -1,0 +1,54 @@
+{
+  "corpus": {
+    "accounts": 22,
+    "events": 326,
+    "simulated_actor_accounts": [
+      "acct-a1",
+      "acct-a2",
+      "acct-a3",
+      "acct-b1",
+      "acct-b2"
+    ]
+  },
+  "behavioral": {
+    "true_positives": 5,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_accounts": [],
+    "missed_accounts": [],
+    "flag_rate": 0.227
+  },
+  "baseline": {
+    "true_positives": 5,
+    "false_positives": 3,
+    "false_negatives": 0,
+    "precision": 0.625,
+    "recall": 1.0,
+    "f1": 0.769,
+    "false_positive_accounts": [
+      "acct-sec1",
+      "acct-sec2",
+      "acct-sec3"
+    ],
+    "missed_accounts": [],
+    "flag_rate": 0.364
+  },
+  "detection_latency_hours": 5.0,
+  "detection_latency_all_hours": [
+    5.0,
+    5.0,
+    5.0,
+    0.0,
+    0.0
+  ],
+  "campaign_coverage": 1.0,
+  "campaign_purity": 1.0,
+  "best_campaign": "CAMP-2026-001",
+  "notes": [
+    "Precision and recall are account-level on a synthetic corpus and do not transfer to production traffic.",
+    "The baseline is a deliberately naive message-level keyword classifier, included to show the cost of ignoring sequence context."
+  ]
+}

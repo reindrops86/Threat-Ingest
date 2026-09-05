@@ -1,0 +1,54 @@
+[
+  {
+    "entity": "ransomware",
+    "signal_type": "keyword_match",
+    "source": "https://github.com/bhanuM1279/Implementation-and-Detection-of-Ransomware-Attacks",
+    "source_type": "github_repo",
+    "snippet": "bhanuM1279/Implementation-and-Detection-of-Ransomware-Attacks",
+    "confidence": 0.75,
+    "tags": [
+      "keyword-match",
+      "ransomware"
+    ],
+    "severity": "medium"
+  },
+  {
+    "entity": "ransomware",
+    "signal_type": "keyword_match",
+    "source": "https://github.com/sectionmedicpinpoint/Ransomware-CSharp-AES-PoC",
+    "source_type": "github_repo",
+    "snippet": "sectionmedicpinpoint/Ransomware-CSharp-AES-PoC",
+    "confidence": 0.75,
+    "tags": [
+      "keyword-match",
+      "ransomware"
+    ],
+    "severity": "medium"
+  },
+  {
+    "entity": "ransomware",
+    "signal_type": "keyword_match",
+    "source": "https://github.com/RansomwareEDP/Mapping",
+    "source_type": "github_repo",
+    "snippet": "RansomwareEDP/Mapping Understanding the Ransomware Ecosystem",
+    "confidence": 0.75,
+    "tags": [
+      "keyword-match",
+      "ransomware"
+    ],
+    "severity": "medium"
+  },
+  {
+    "entity": "ransomware",
+    "signal_type": "keyword_match",
+    "source": "inline_text",
+    "source_type": "text",
+    "snippet": "bhanuM1279/Implementation-and-Detection-of-Ransomware-Attacks  sectionmedicpinpoint/Ransomware-CSharp-AES-PoC  RansomwareEDP/Mapping Understanding the Ransomware Ecosystem",
+    "confidence": 0.75,
+    "tags": [
+      "keyword-match",
+      "ransomware"
+    ],
+    "severity": "medium"
+  }
+]

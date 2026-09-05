@@ -1,0 +1,12 @@
+{
+  "name": "Live demo scenario",
+  "feed": [
+    {"id": "ioc-101", "type": "domain", "value": "cdn-update.example.test", "tags": ["command-and-control"], "confidence": 82},
+    {"id": "ioc-102", "type": "url", "value": "https://login.example.test/sso", "tags": ["phishing", "credential-access"], "confidence": 88},
+    {"id": "ioc-103", "type": "ipv4", "value": "203.0.113.77", "tags": ["cryptomining"], "confidence": 74},
+    {"id": "ioc-104", "type": "domain", "value": "pool.example.test", "tags": ["cryptomining"], "confidence": 69}
+  ],
+  "connector_outcomes": [
+    {"indicator_id": "ioc-103", "outcome": "auth_failure"}
+  ]
+}

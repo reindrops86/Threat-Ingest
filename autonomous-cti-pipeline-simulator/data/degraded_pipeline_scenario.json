@@ -1,0 +1,13 @@
+{
+  "name": "Degraded TAXII connector with successful enrichment",
+  "feed": [
+    {"id": "ioc-001", "type": "domain", "value": "control.example.test", "tags": ["command-and-control"], "confidence": 78},
+    {"id": "ioc-002", "type": "url", "value": "https://phish.example.test/login", "tags": ["phishing"], "confidence": 85},
+    {"id": "ioc-003", "type": "ipv4", "value": "198.51.100.42", "tags": ["malware"], "confidence": 70},
+    {"id": "ioc-004", "type": "domain", "tags": ["invalid"]}
+  ],
+  "connector_outcomes": [
+    {"indicator_id": "ioc-002", "outcome": "auth_failure"},
+    {"indicator_id": "ioc-003", "outcome": "schema_mismatch"}
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "evidence_id": "EVD-001",
+    "research_question": "Which regulatory pressures shape compliance-automation buying decisions?",
+    "claim": "Financial institutions operate under anti-money-laundering program obligations that create recurring documentation and monitoring work.",
+    "source_title": "Anti-Money Laundering Program Requirements",
+    "source_url": "https://www.fincen.gov/resources/statutes-regulations",
+    "publisher": "Financial Crimes Enforcement Network",
+    "source_tier": "primary",
+    "retrieved_at": "2026-08-24T00:00:00Z",
+    "snapshot_note": "Official regulatory reference captured for the deterministic demo catalog."
+  },
+  {
+    "evidence_id": "EVD-002",
+    "research_question": "Which security controls influence fintech vendor selection?",
+    "claim": "PCI DSS provides a baseline security standard for organizations that store, process, or transmit cardholder data.",
+    "source_title": "PCI DSS Standards",
+    "source_url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+    "publisher": "PCI Security Standards Council",
+    "source_tier": "primary",
+    "retrieved_at": "2026-08-24T00:00:00Z",
+    "snapshot_note": "Official standards reference captured for the deterministic demo catalog."
+  },
+  {
+    "evidence_id": "EVD-003",
+    "research_question": "Which buyer outcomes support a compliance-automation value proposition?",
+    "claim": "The NIST Privacy Framework describes privacy risk management as an organizational process that can be integrated with broader enterprise risk management.",
+    "source_title": "NIST Privacy Framework",
+    "source_url": "https://www.nist.gov/privacy-framework",
+    "publisher": "National Institute of Standards and Technology",
+    "source_tier": "primary",
+    "retrieved_at": "2026-08-24T00:00:00Z",
+    "snapshot_note": "Official framework reference captured for the deterministic demo catalog."
+  },
+  {
+    "evidence_id": "EVD-004",
+    "research_question": "What implementation evidence should a fintech buyer expect from a vendor?",
+    "claim": "SOC 2 examinations evaluate controls relevant to security, availability, processing integrity, confidentiality, and privacy.",
+    "source_title": "SOC for Service Organizations",
+    "source_url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+    "publisher": "AICPA & CIMA",
+    "source_tier": "top_tier",
+    "retrieved_at": "2026-08-24T00:00:00Z",
+    "snapshot_note": "Professional standards reference captured for the deterministic demo catalog."
+  }
+]

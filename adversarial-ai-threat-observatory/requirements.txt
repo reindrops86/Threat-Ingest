@@ -1,0 +1,3 @@
+# The pipeline, detections, and report generation use only the Python standard library.
+# Tests require pytest.
+pytest>=8.0.0

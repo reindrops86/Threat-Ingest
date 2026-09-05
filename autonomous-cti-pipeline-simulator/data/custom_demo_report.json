@@ -1,0 +1,326 @@
+{
+  "report_type": "cti_pipeline_simulation",
+  "generated_at": "2026-08-29T01:01:56Z",
+  "scenario": "Live demo scenario",
+  "pipeline_health": 94,
+  "pipeline_status": "healthy",
+  "stages": {
+    "ingestion": {
+      "health": 100,
+      "successful": 4,
+      "attempted": 4,
+      "status": "healthy"
+    },
+    "enrichment": {
+      "health": 100,
+      "successful": 4,
+      "attempted": 4,
+      "status": "healthy"
+    },
+    "connector": {
+      "health": 75,
+      "successful": 3,
+      "attempted": 4,
+      "status": "degraded"
+    },
+    "transport": {
+      "health": 100,
+      "successful": 3,
+      "attempted": 3,
+      "status": "healthy"
+    }
+  },
+  "metrics": {
+    "ingested": 4,
+    "enriched": 4,
+    "connector_passed": 3,
+    "transported": 3,
+    "connector_failed": 1
+  },
+  "events": [
+    {
+      "agent": "IngestionAgent",
+      "indicator_id": "ioc-101",
+      "status": "accepted",
+      "detail": "feed record accepted"
+    },
+    {
+      "agent": "IngestionAgent",
+      "indicator_id": "ioc-102",
+      "status": "accepted",
+      "detail": "feed record accepted"
+    },
+    {
+      "agent": "IngestionAgent",
+      "indicator_id": "ioc-103",
+      "status": "accepted",
+      "detail": "feed record accepted"
+    },
+    {
+      "agent": "IngestionAgent",
+      "indicator_id": "ioc-104",
+      "status": "accepted",
+      "detail": "feed record accepted"
+    },
+    {
+      "agent": "EnrichmentAgent",
+      "indicator_id": "ioc-101",
+      "status": "enriched",
+      "detail": "added passive_dns, reputation_index context"
+    },
+    {
+      "agent": "EnrichmentAgent",
+      "indicator_id": "ioc-102",
+      "status": "enriched",
+      "detail": "added passive_dns, reputation_index context"
+    },
+    {
+      "agent": "EnrichmentAgent",
+      "indicator_id": "ioc-103",
+      "status": "enriched",
+      "detail": "added passive_dns, reputation_index context"
+    },
+    {
+      "agent": "EnrichmentAgent",
+      "indicator_id": "ioc-104",
+      "status": "enriched",
+      "detail": "added passive_dns, reputation_index context"
+    },
+    {
+      "agent": "ConnectorAgent",
+      "indicator_id": "ioc-101",
+      "status": "passed",
+      "detail": "connector accepted enriched record"
+    },
+    {
+      "agent": "STIXTransportAgent",
+      "indicator_id": "ioc-101",
+      "status": "delivered",
+      "detail": "STIX 2.1 indicator delivered to simulated TAXII collection"
+    },
+    {
+      "agent": "ConnectorAgent",
+      "indicator_id": "ioc-102",
+      "status": "passed",
+      "detail": "connector accepted enriched record"
+    },
+    {
+      "agent": "STIXTransportAgent",
+      "indicator_id": "ioc-102",
+      "status": "delivered",
+      "detail": "STIX 2.1 indicator delivered to simulated TAXII collection"
+    },
+    {
+      "agent": "ConnectorAgent",
+      "indicator_id": "ioc-103",
+      "status": "failed",
+      "detail": "401 simulated: token rejected"
+    },
+    {
+      "agent": "ConnectorAgent",
+      "indicator_id": "ioc-104",
+      "status": "passed",
+      "detail": "connector accepted enriched record"
+    },
+    {
+      "agent": "STIXTransportAgent",
+      "indicator_id": "ioc-104",
+      "status": "delivered",
+      "detail": "STIX 2.1 indicator delivered to simulated TAXII collection"
+    }
+  ],
+  "transported_stix_objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--sim-ioc-101",
+      "created": "2026-08-29T01:01:56Z",
+      "modified": "2026-08-29T01:01:56Z",
+      "pattern": "[domain-name:value = 'cdn-update.example.test']",
+      "pattern_type": "stix",
+      "valid_from": "2026-08-29T01:01:56Z",
+      "labels": [
+        "command-and-control"
+      ],
+      "confidence": 82
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--sim-ioc-102",
+      "created": "2026-08-29T01:01:56Z",
+      "modified": "2026-08-29T01:01:56Z",
+      "pattern": "[url:value = 'https://login.example.test/sso']",
+      "pattern_type": "stix",
+      "valid_from": "2026-08-29T01:01:56Z",
+      "labels": [
+        "phishing",
+        "credential-access"
+      ],
+      "confidence": 88
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--sim-ioc-104",
+      "created": "2026-08-29T01:01:56Z",
+      "modified": "2026-08-29T01:01:56Z",
+      "pattern": "[domain-name:value = 'pool.example.test']",
+      "pattern_type": "stix",
+      "valid_from": "2026-08-29T01:01:56Z",
+      "labels": [
+        "cryptomining"
+      ],
+      "confidence": 69
+    }
+  ],
+  "cloud_attack_path": {
+    "nodes": [
+      {
+        "id": "dependency",
+        "label": "Poisoned dependency",
+        "kind": "initial access",
+        "evidence": [
+          "ioc-101"
+        ]
+      },
+      {
+        "id": "ci_runner",
+        "label": "CI runner",
+        "kind": "build system",
+        "evidence": [
+          "ioc-101"
+        ]
+      },
+      {
+        "id": "secret",
+        "label": "Deployment secret",
+        "kind": "credential",
+        "evidence": [
+          "ioc-101",
+          "ioc-102"
+        ]
+      },
+      {
+        "id": "iam_role",
+        "label": "Overprivileged IAM role",
+        "kind": "identity",
+        "evidence": [
+          "ioc-101",
+          "ioc-102"
+        ]
+      },
+      {
+        "id": "workload",
+        "label": "Production workload",
+        "kind": "cloud workload",
+        "evidence": [
+          "ioc-101",
+          "ioc-102"
+        ]
+      },
+      {
+        "id": "compute",
+        "label": "Unexpected compute",
+        "kind": "resource hijack",
+        "evidence": [
+          "ioc-104"
+        ]
+      },
+      {
+        "id": "c2",
+        "label": "Rotating C2 infrastructure",
+        "kind": "external infrastructure",
+        "evidence": [
+          "ioc-101"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "dependency",
+        "to": "ci_runner",
+        "relationship": "executes in"
+      },
+      {
+        "from": "ci_runner",
+        "to": "secret",
+        "relationship": "reads"
+      },
+      {
+        "from": "secret",
+        "to": "iam_role",
+        "relationship": "assumes"
+      },
+      {
+        "from": "iam_role",
+        "to": "workload",
+        "relationship": "controls"
+      },
+      {
+        "from": "workload",
+        "to": "compute",
+        "relationship": "launches"
+      },
+      {
+        "from": "compute",
+        "to": "c2",
+        "relationship": "beacons to"
+      }
+    ]
+  },
+  "infrastructure_clusters": [
+    {
+      "cluster_id": "cluster-01",
+      "assessment": "Suspected campaign infrastructure",
+      "confidence": 72,
+      "pivots": [
+        "domain and URL behavior",
+        "hosting or ASN",
+        "TLS certificate",
+        "timing"
+      ],
+      "indicators": [
+        {
+          "id": "ioc-101",
+          "value": "cdn-update.example.test"
+        },
+        {
+          "id": "ioc-102",
+          "value": "https://login.example.test/sso"
+        },
+        {
+          "id": "ioc-103",
+          "value": "203.0.113.77"
+        },
+        {
+          "id": "ioc-104",
+          "value": "pool.example.test"
+        }
+      ]
+    }
+  ],
+  "analyst_decisions": [],
+  "agent_trace": [
+    {
+      "agent": "IngestionAgent",
+      "result": "4/4 accepted"
+    },
+    {
+      "agent": "EnrichmentAgent",
+      "result": "4 enriched"
+    },
+    {
+      "agent": "ConnectorAgent",
+      "result": "3 passed, 1 failed"
+    },
+    {
+      "agent": "STIXTransportAgent",
+      "result": "3 delivered"
+    },
+    {
+      "agent": "PipelineHealthAgent",
+      "result": "94/100 (healthy)"
+    }
+  ]
+}

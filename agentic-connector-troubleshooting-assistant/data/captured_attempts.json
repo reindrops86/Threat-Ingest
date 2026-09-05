@@ -1,0 +1,17 @@
+[
+  {
+    "request_url": "https://taxii.example.test/taxii2/collections/collection-7f4c/objects/",
+    "response_status": 401,
+    "payload": {"type": "indicator", "id": "indicator--4e5b28aa-8b3b-4a8c-8438-4cb5ed2cd7a2", "spec_version": "2.1"}
+  },
+  {
+    "request_url": "https://taxii.example.test/taxii2/collections/collection-old/objects/",
+    "response_status": 404,
+    "payload": {"type": "indicator", "id": "indicator--e33f96c1-40ae-4648-8d16-8aab3cda34b9"}
+  },
+  {
+    "request_url": "https://taxii.example.test/taxii2/collections/collection-7f4c/objects/",
+    "response_status": 202,
+    "payload": {"type": "indicator", "spec_version": "2.1"}
+  }
+]

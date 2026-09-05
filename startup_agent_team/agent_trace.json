@@ -1,0 +1,30 @@
+[
+  {
+    "agent": "Research Agent",
+    "step": "market_signal_generation",
+    "input_domain": "fintech",
+    "output_summary": "Start with a focused wedge in fintech where the pain is urgent and measurable."
+  },
+  {
+    "agent": "Funding Advisor",
+    "step": "funding_recommendation",
+    "input_domain": "fintech",
+    "output_summary": [
+      "Fintech innovation grants",
+      "Regional startup accelerator cohorts",
+      "Banking and payments sandbox programs"
+    ]
+  },
+  {
+    "agent": "Pitch Coach",
+    "step": "pitch_outline_generation",
+    "input_domain": "fintech",
+    "output_summary": "Fintech Startup Pitch Deck Outline"
+  },
+  {
+    "agent": "Pitch Coach",
+    "step": "refinement_feedback",
+    "input_domain": "fintech",
+    "output_summary": "Pitch tightened around wedge, traction, and funding fit."
+  }
+]

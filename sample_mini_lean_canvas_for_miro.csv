@@ -1,0 +1,11 @@
+section,ai_draft,review_label,class_notes
+User / Customer,"- Small medical clinics with high appointment no-show rates.
+- Front-desk staff who spend time on reminders and scheduling questions.",assumption,
+Problem,"- Missed appointments reduce revenue and delay patient care.
+- Staff time is consumed by repetitive scheduling communication.",assumption,
+AI Solution / MVP,"- Send automated appointment reminders and answer common scheduling questions.
+- Escalate complex or sensitive cases to front-desk staff.",assumption,
+Success Metric,"- Reduce no-show rate for the pilot patient group.
+- Track staff handoffs, patient satisfaction, and reminder response rate.",evidence_needed,
+Biggest Assumption / Next Test,"- Assumption: patients will trust and respond to AI scheduling messages.
+- Next test: run a small pilot and compare no-show rate against a baseline.",next_test,

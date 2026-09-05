@@ -1,0 +1,36 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+credentials.json
+token.json
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local logs and scratch output
+*.log
+
+# Already published as its own repository:
+# https://github.com/reindrops86/Cloud-Campaign-Evidence
+cloud-campaign-evidence-graph/

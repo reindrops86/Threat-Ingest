@@ -1,0 +1,8 @@
+{
+  "Event": {
+    "Attribute": [
+      {"type": "domain", "value": "cdn[.]malicious.test", "timestamp": "2026-08-20T09:30:00Z", "Tag": [{"name": "misp-galaxy:malware=example"}]},
+      {"type": "ip-dst", "value": "2001:db8::77", "timestamp": "2026-08-20T09:45:00Z"}
+    ]
+  }
+}

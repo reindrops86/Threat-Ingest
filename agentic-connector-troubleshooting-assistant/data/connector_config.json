@@ -1,0 +1,6 @@
+{
+  "name": "Vendor STIX to TAXII connector",
+  "connector_type": "taxii_2_1",
+  "collection_id": "collection-7f4c",
+  "required_fields": ["type", "id", "spec_version"]
+}

@@ -1,0 +1,194 @@
+{
+  "name": "GTM_Multi_Agent_Research_Workflow",
+  "nodes": [
+    {
+      "id": "start-1",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "parameters": {}
+    },
+    {
+      "id": "input-1",
+      "name": "Domain Input",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [440, 300],
+      "parameters": {
+        "values": {
+          "mapping": [
+            {
+              "name": "domain",
+              "value": "={{ $json.domain || 'fintech' }}"
+            }
+          ],
+          "duplicate": false
+        }
+      }
+    },
+    {
+      "id": "mcp-1",
+      "name": "MCP Research Tool",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [660, 300],
+      "parameters": {
+        "url": "http://localhost:8000/tools/research",
+        "method": "POST",
+        "jsonBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "domain",
+              "value": "={{ $json.domain }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "research-1",
+      "name": "Research Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 300],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const research = items.map(item => ({ json: { ...item.json, agent: 'Research Agent', research_summary: 'Desk research output assembled' } })); return research;"
+      }
+    },
+    {
+      "id": "analyst-1",
+      "name": "Analyst Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 300],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const insight = items.map(item => ({ json: { ...item.json, agent: 'Analyst Agent', opportunity_summary: 'Competitor and market gaps identified' } })); return insight;"
+      }
+    },
+    {
+      "id": "strategy-1",
+      "name": "Strategy Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 300],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const plan = items.map(item => ({ json: { ...item.json, agent: 'Strategy Agent', gtm_plan: 'Channel, positioning, launch timeline, KPI plan' } })); return plan;"
+      }
+    },
+    {
+      "id": "planner-1",
+      "name": "Head Planner",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 300],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const finalDoc = items.map(item => ({ json: { ...item.json, agent: 'Head Planner', final_strategy_doc: 'Executive GTM strategy and launch brief' } })); return finalDoc;"
+      }
+    },
+    {
+      "id": "docs-1",
+      "name": "Google Docs Export",
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 1,
+      "position": [1760, 300],
+      "parameters": {
+        "operation": "appendOrUpdateDocumentContent",
+        "documentId": "{{ $env.GOOGLE_DOC_ID }}",
+        "text": "={{ JSON.stringify($json.final_strategy_doc) }}"
+      }
+    }
+  ],
+  "connections": {
+    "start-1": {
+      "main": [
+        [
+          {
+            "node": "input-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "input-1": {
+      "main": [
+        [
+          {
+            "node": "mcp-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mcp-1": {
+      "main": [
+        [
+          {
+            "node": "research-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "research-1": {
+      "main": [
+        [
+          {
+            "node": "analyst-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "analyst-1": {
+      "main": [
+        [
+          {
+            "node": "strategy-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "strategy-1": {
+      "main": [
+        [
+          {
+            "node": "planner-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "planner-1": {
+      "main": [
+        [
+          {
+            "node": "docs-1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "gtm-multi-agent-workflow"
+  }
+}

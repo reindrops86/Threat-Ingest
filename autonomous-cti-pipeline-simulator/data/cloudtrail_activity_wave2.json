@@ -1,0 +1,96 @@
+{
+  "description": "Second wave of synthetic activity roughly 40 days after cloudtrail_activity.json. Source infrastructure has rotated to a different country and ASN, but the SSH public key material and API call sequence are unchanged.",
+  "events": [
+    {
+      "eventTime": "2026-10-02T03:18:22Z",
+      "eventName": "ImportKeyPair",
+      "awsRegion": "sa-east-1",
+      "sourceIPAddress": "192.0.2.55",
+      "userAgent": "Boto3/1.35.1 Python/3.12",
+      "accessKeyId": "AKIAEXAMPLELEAK07",
+      "principal": "arn:aws:iam::222233334444:user/media-worker",
+      "asn": "AS-EXAMPLE-BR",
+      "country": "BR",
+      "errorCode": null,
+      "requestParameters": {"keyName": "appes", "publicKeyMaterial": "SGA1-EXAMPLE-PUBKEY-MATERIAL-AAA"}
+    },
+    {
+      "eventTime": "2026-10-02T03:19:01Z",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "sa-east-1",
+      "sourceIPAddress": "192.0.2.55",
+      "userAgent": "Boto3/1.35.1 Python/3.12",
+      "accessKeyId": "AKIAEXAMPLELEAK07",
+      "principal": "arn:aws:iam::222233334444:user/media-worker",
+      "asn": "AS-EXAMPLE-BR",
+      "country": "BR",
+      "errorCode": null,
+      "requestParameters": {}
+    },
+    {
+      "eventTime": "2026-10-02T03:19:44Z",
+      "eventName": "DescribeSubnets",
+      "awsRegion": "sa-east-1",
+      "sourceIPAddress": "192.0.2.55",
+      "userAgent": "Boto3/1.35.1 Python/3.12",
+      "accessKeyId": "AKIAEXAMPLELEAK07",
+      "principal": "arn:aws:iam::222233334444:user/media-worker",
+      "asn": "AS-EXAMPLE-BR",
+      "country": "BR",
+      "errorCode": null,
+      "requestParameters": {}
+    },
+    {
+      "eventTime": "2026-10-02T03:20:12Z",
+      "eventName": "DescribeInstances",
+      "awsRegion": "sa-east-1",
+      "sourceIPAddress": "192.0.2.55",
+      "userAgent": "Boto3/1.35.1 Python/3.12",
+      "accessKeyId": "AKIAEXAMPLELEAK07",
+      "principal": "arn:aws:iam::222233334444:user/media-worker",
+      "asn": "AS-EXAMPLE-BR",
+      "country": "BR",
+      "errorCode": null,
+      "requestParameters": {}
+    },
+    {
+      "eventTime": "2026-10-02T03:21:03Z",
+      "eventName": "CreateCluster",
+      "awsRegion": "sa-east-1",
+      "sourceIPAddress": "192.0.2.55",
+      "userAgent": "Boto3/1.35.1 Python/3.12",
+      "accessKeyId": "AKIAEXAMPLELEAK07",
+      "principal": "arn:aws:iam::222233334444:user/media-worker",
+      "asn": "AS-EXAMPLE-BR",
+      "country": "BR",
+      "errorCode": null,
+      "requestParameters": {"clusterName": "bapak1"}
+    },
+    {
+      "eventTime": "2026-10-04T11:40:55Z",
+      "eventName": "GetSendQuota",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.201",
+      "userAgent": "python-requests/2.32.0",
+      "accessKeyId": "AKIAEXAMPLELEAK08",
+      "principal": "arn:aws:iam::555566667777:user/mail-service",
+      "asn": "AS-EXAMPLE-HOST",
+      "country": "US",
+      "errorCode": null,
+      "requestParameters": {}
+    },
+    {
+      "eventTime": "2026-10-04T11:41:28Z",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.201",
+      "userAgent": "python-requests/2.32.0",
+      "accessKeyId": "AKIAEXAMPLELEAK08",
+      "principal": "arn:aws:iam::555566667777:user/mail-service",
+      "asn": "AS-EXAMPLE-HOST",
+      "country": "US",
+      "errorCode": null,
+      "requestParameters": {"userName": "ses_xcatze"}
+    }
+  ]
+}
