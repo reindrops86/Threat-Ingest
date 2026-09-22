@@ -3,10 +3,14 @@ from __future__ import annotations
 from functools import lru_cache
 from os import getenv
 
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
+
+load_dotenv()
 
 
 class Settings(BaseModel):
+    abuse_ch_auth_key: str | None = Field(default_factory=lambda: getenv("ABUSE_CH_AUTH_KEY"))
     database_url: str = Field(
         default_factory=lambda: getenv(
             "DATABASE_URL", "postgresql+psycopg://threat_ingest:change-me@localhost:5432/threat_ioc"

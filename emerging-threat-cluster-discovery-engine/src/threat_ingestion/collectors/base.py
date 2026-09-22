@@ -18,7 +18,8 @@ class MetadataCollector(ABC):
 
     def __init__(self, settings: Settings, client: httpx.AsyncClient | None = None) -> None:
         self.settings = settings
-        self.client = client or httpx.AsyncClient(timeout=settings.timeout_seconds)
+        headers = {"Auth-Key": settings.abuse_ch_auth_key} if settings.abuse_ch_auth_key else None
+        self.client = client or httpx.AsyncClient(timeout=settings.timeout_seconds, headers=headers)
 
     @abstractmethod
     async def fetch_records(self, cursor: str | None = None) -> Iterable[dict[str, Any]]:

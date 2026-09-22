@@ -11,10 +11,15 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -e ".[dev]"
 Copy-Item .env.example .env
+# Edit .env and set ABUSE_CH_AUTH_KEY from https://auth.abuse.ch/
 docker compose up -d
 alembic upgrade head
-threat-ingest collect --dry-run
+threat-ingest collect
 pytest
 ```
 
-Use `threat-ingest collect-source threatfox --dry-run` for a single source, or `threat-ingest schedule` for the hourly job.
+The same `ABUSE_CH_AUTH_KEY` is used for the ThreatFox, URLhaus, and MalwareBazaar
+community APIs. Keep `.env` local and never commit the key. Use
+`threat-ingest collect-source threatfox` (or `urlhaus` / `malwarebazaar`) for one
+source, `--dry-run` to fetch and normalize without persistence, or
+`threat-ingest schedule` for the hourly job.
