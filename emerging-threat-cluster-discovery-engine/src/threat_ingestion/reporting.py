@@ -27,6 +27,40 @@ def _markdown_table(rows: list[tuple[str, int]], heading: str) -> list[str]:
     return lines
 
 
+def _correlation_rows(
+    observations: list[ObservationRecord], indicator_by_id: dict[int, IndicatorRecord]
+) -> list[tuple[str, int, str, str, str]]:
+    clusters: dict[str, dict[str, Any]] = {}
+    for observation in observations:
+        metadata: dict[str, Any] = observation.metadata_json or {}
+        family = str(metadata.get("malware") or metadata.get("malware_family") or "unlabeled")
+        cluster = clusters.setdefault(
+            family, {"count": 0, "sources": set(), "types": set(), "tags": Counter()}
+        )
+        cluster["count"] += 1
+        cluster["sources"].add(observation.source)
+        indicator = indicator_by_id.get(observation.indicator_id)
+        if indicator:
+            cluster["types"].add(indicator.indicator_type)
+        tags = metadata.get("tags") or []
+        if isinstance(tags, list):
+            cluster["tags"].update(str(tag) for tag in tags if tag)
+
+    rows = []
+    for family, cluster in clusters.items():
+        top_tags = ", ".join(tag for tag, _ in cluster["tags"].most_common(3)) or "none"
+        rows.append(
+            (
+                family,
+                cluster["count"],
+                ", ".join(sorted(cluster["sources"])),
+                ", ".join(sorted(cluster["types"])),
+                top_tags,
+            )
+        )
+    return sorted(rows, key=lambda row: (-row[1], row[0]))[:15]
+
+
 def build_report(session: Session, recent_limit: int = 20) -> str:
     indicators = session.scalars(select(IndicatorRecord)).all()
     observations = session.scalars(
@@ -73,6 +107,24 @@ def build_report(session: Session, recent_limit: int = 20) -> str:
     lines.extend(_markdown_table(_top_rows(type_counts), "Indicators by Type"))
     lines.extend(_markdown_table(_top_rows(family_counts), "Top Malware Families"))
     lines.extend(_markdown_table(_top_rows(tag_counts), "Top Tags"))
+
+    lines.extend(
+        [
+            "### Correlation Clusters",
+            "",
+            "Clusters group observations by malware family and show their source and IOC-type spread.",
+            "",
+            "| Family | Observations | Sources | IOC Types | Top Tags |",
+            "|---|---:|---|---|---|",
+        ]
+    )
+    for family, count, sources, indicator_types, top_tags in _correlation_rows(
+        observations, indicator_by_id
+    ):
+        lines.append(
+            f"| {family.replace('|', '\\|')} | {count} | {sources} | {indicator_types} | {top_tags} |"
+        )
+    lines.append("")
 
     lines.extend(["## Recent Observations", "", "| Source | Type | Indicator | Observed At |", "|---|---|---|---|"])
     for observation in observations[:recent_limit]:
