@@ -38,3 +38,12 @@ def test_normalization_produces_stable_canonical_value() -> None:
     assert observation.source_record_id == "record-1"
     assert observation.canonical_value == "example.test"
     asyncio.run(collector.client.aclose())
+
+
+def test_threatfox_ioc_field_is_normalized() -> None:
+    collector = FixtureCollector(Settings())
+    observation = collector.normalize(
+        {"id": "record-2", "ioc_type": "url", "ioc": "https://example.test/path"}
+    )
+    assert observation.canonical_value == "https://example.test/path"
+    asyncio.run(collector.client.aclose())

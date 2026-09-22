@@ -9,6 +9,7 @@ from .application import collect_once
 from .collectors import MalwareBazaarCollector, ThreatFoxCollector, URLhausCollector
 from .config import get_settings
 from .persistence import IngestionRepository, session_factory
+from .reporting import write_report
 from .scheduler import start_scheduler
 
 app = typer.Typer(no_args_is_help=True)
@@ -46,6 +47,20 @@ def collect_source(
 @app.command("schedule")
 def schedule() -> None:
     start_scheduler()
+
+
+@app.command("report")
+def report(
+    output: str = typer.Option("reports/threat-intelligence-report.md", help="Markdown report path."),
+    recent_limit: int = typer.Option(20, min=0, help="Recent observations to include."),
+) -> None:
+    settings = get_settings()
+    session = session_factory(settings.database_url)()
+    try:
+        report_path = write_report(session, output, recent_limit=recent_limit)
+        typer.echo(f"Wrote report to {report_path}")
+    finally:
+        session.close()
 
 
 def run_collection_sync(source: str | None, dry_run: bool) -> dict:

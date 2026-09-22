@@ -7,7 +7,7 @@ from .models import IocObservation, SourceName
 
 
 def normalized_observation(source: SourceName, record: dict[str, Any]) -> IocObservation:
-    value = record.get("ioc_value") or record.get("url") or record.get("sha256_hash") or ""
+    value = record.get("ioc_value") or record.get("ioc") or record.get("url") or record.get("sha256_hash") or ""
     observed = record.get("first_seen") or record.get("date_added") or datetime.now(timezone.utc)
     if isinstance(observed, str):
         observed = datetime.fromisoformat(observed.replace(" UTC", "+00:00").replace("Z", "+00:00"))

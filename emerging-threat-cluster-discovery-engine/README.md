@@ -23,3 +23,12 @@ community APIs. Keep `.env` local and never commit the key. Use
 `threat-ingest collect-source threatfox` (or `urlhaus` / `malwarebazaar`) for one
 source, `--dry-run` to fetch and normalize without persistence, or
 `threat-ingest schedule` for the hourly job.
+
+Generate a Markdown report from the PostgreSQL data collected so far:
+
+```powershell
+threat-ingest report
+```
+
+Use `--output reports/custom-report.md` to choose a path and
+`--recent-limit 50` to include more recent observations.
