@@ -31,6 +31,16 @@ _FAMILY_TECHNIQUES: dict[str, list[tuple[str, str, str]]] = {
         ("T1055", "Process Injection", "Defense Evasion"),
         ("T1071.001", "Application Layer Protocol: Web Protocols", "Command and Control"),
     ],
+    "mirai": [
+        ("T1078", "Valid Accounts", "Initial Access"),
+        ("T1499", "Endpoint Denial of Service", "Impact"),
+        ("T1071.001", "Application Layer Protocol: Web Protocols", "Command and Control"),
+    ],
+    "amos": [
+        ("T1555", "Credentials from Password Stores", "Credential Access"),
+        ("T1539", "Steal Web Session Cookie", "Credential Access"),
+        ("T1005", "Data from Local System", "Collection"),
+    ],
     "cobaltstrike": [
         ("T1071.001", "Application Layer Protocol: Web Protocols", "Command and Control"),
         ("T1055", "Process Injection", "Defense Evasion"),
@@ -128,9 +138,16 @@ _FAMILY_TECHNIQUES: dict[str, list[tuple[str, str, str]]] = {
 def techniques_for_family(malware_family: str) -> list[AttackTechnique]:
     """Looks up curated ATT&CK techniques for a malware family name. Matching is
     case-insensitive and ignores spaces/hyphens/underscores so tag variants like
-    'Cobalt-Strike', 'cobalt_strike', and 'CobaltStrike' all resolve."""
-    normalized = "".join(ch for ch in malware_family.lower() if ch.isalnum())
+    'Cobalt-Strike', 'cobalt_strike', and 'CobaltStrike' all resolve. Also strips
+    the platform prefix ThreatFox/MalwareBazaar attach to family tags (e.g.
+    'win.cobalt_strike', 'elf.mirai', 'osx.amos') before matching."""
+    candidates = {malware_family.lower()}
+    if "." in malware_family:
+        candidates.add(malware_family.split(".", 1)[1].lower())
+    normalized_candidates = {"".join(ch for ch in candidate if ch.isalnum()) for candidate in candidates}
+
     for family, techniques in _FAMILY_TECHNIQUES.items():
-        if "".join(ch for ch in family if ch.isalnum()) == normalized:
+        normalized_family = "".join(ch for ch in family if ch.isalnum())
+        if normalized_family in normalized_candidates:
             return [AttackTechnique(technique_id=tid, name=name, tactic=tactic) for tid, name, tactic in techniques]
     return []
